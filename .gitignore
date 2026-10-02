@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+.venv311/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data - do not push datasets
+# Generated data
+data/interim/*
+data/processed/*
+
+# Keep raw datasets in repository
+# Exclude only the oversized MeAJOR CSV
+data/raw/meajor/meajor_cleaned_preprocessed.csv
+
+# Exclude Hugging Face cache files
+data/raw/**/.cache/
+
+# Keep folder structure
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Generated/cache files
+*.log
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+data/raw/llm_generated_phishing/cross-model-phishing/code/

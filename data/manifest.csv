@@ -1,0 +1,4 @@
+dataset_key,name,url,doi,approx_scale,languages,retrieved_at,license,record_count,status,notes
+meajor,MeAJOR,https://zenodo.org/records/18471483,https://doi.org/10.1016/j.dib.2026.112595,108685 emails,en,2026-09-22T12:28:18Z,cc-by-4.0,,downloaded,2 file(s) -> E:\scamshield\data\raw\meajor
+indian_cyber_scam,Indian Cyber Scam Communication,https://huggingface.co/datasets/ysangam/Indian_Cyber_Scam_PhoneCall_Hinglish_Dataset,,10000,"hi,en,hinglish",2026-09-24T07:01:37Z,see dataset card,,downloaded,snapshot -> E:\scamshield\data\raw\indian_cyber_scam
+llm_generated_phishing,LLM-generated phishing benchmark,https://zenodo.org/records/20250116,,9986 phishing emails,en,2026-09-24T07:03:42Z,cc-by-4.0,,downloaded,2 file(s) -> E:\scamshield\data\raw\llm_generated_phishing

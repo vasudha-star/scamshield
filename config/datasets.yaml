@@ -1,0 +1,56 @@
+# Dataset registry — mirrors blueprint Section 8.
+# Each entry drives download_datasets.py and is logged verbatim into data/manifest.csv.
+# NOTE: verify license terms before redistribution; this only records retrieval metadata.
+
+datasets:
+  meajor:
+    name: "MeAJOR"
+    url: "https://zenodo.org/records/18471483"
+    doi: "https://doi.org/10.1016/j.dib.2026.112595"
+    approx_scale: "108685 emails"
+    languages: ["en"]
+    use: "large-scale phishing/benign training and benchmark"
+    channel: "email"
+    has_url_field: true
+
+
+  indian_cyber_scam:
+    name: "Indian Cyber Scam Communication"
+    url: "https://huggingface.co/datasets/ysangam/Indian_Cyber_Scam_PhoneCall_Hinglish_Dataset"
+    doi: null
+    approx_scale: "10000"
+    languages: ["hi", "en", "hinglish"]
+    use: "Indian scam adaptation and category analysis"
+    channel: "transcript"
+    has_url_field: false
+    note: >
+      Sample inspection shows templated/repeated sentences with slot-filled
+      variables (e.g. caller_type swapped) — treat as is_natural=false or
+      template_generated, not organically collected. Expect heavy dedup.
+
+  revised_indian_sms:
+    name: "Revised Indian SMS Dataset (Thapar University base + Indian additions)"
+    url: null
+    doi: null
+    approx_scale: "4567 SMS"
+    languages: ["en", "hi", "te-en"]
+    use: "Indian SMS spam/ham, includes real Telugu-English code-mixed messages (code 3-4) and Hindi/Devanagari (code 2)"
+    channel: "sms"
+    has_url_field: true
+    manual_source: "provided directly by user; place at data/raw/revised_indian_sms/revisedindiandataset.xls"
+    # 'code' column -> language mapping, confirmed by direct inspection:
+    #   1  = English (real Indian bank/telecom SMS: Jio, SBI/YONO, PhonePe, Paytm)
+    #   2  = Hindi / Hinglish (includes Devanagari script)
+    #   3  = Telugu-English code-mixed (85 spam / 91 ham)
+    #   4  = Telugu-English code-mixed, mostly ham (505 ham / 15 spam)
+    #   11 = single outlier row, treated as English
+
+  llm_generated_phishing:
+    name: "LLM-generated phishing benchmark"
+    url: "https://zenodo.org/records/20250116"
+    doi: null
+    approx_scale: "9986 phishing emails"
+    languages: ["en"]
+    use: "human vs LLM-generated robustness"
+    channel: "email"
+    has_url_field: true
