@@ -1,0 +1,160 @@
+{
+  "execution_timestamp": "2026-10-03T19:53:10.721908+00:00",
+  "split_hash": "85851abd839f4971",
+  "total_test_samples": 17901,
+  "language_metrics": {
+    "overall": {
+      "n_samples": 17901,
+      "n_threat": 8756,
+      "n_benign": 9145,
+      "accuracy": 0.97559,
+      "precision": 0.97197,
+      "recall": 0.9783,
+      "f1": 0.97513,
+      "pr_auc": 0.99545,
+      "roc_auc": 0.99586,
+      "fpr": 0.02701,
+      "fnr": 0.0217,
+      "tp": 8566,
+      "fp": 247,
+      "tn": 8898,
+      "fn": 190,
+      "confusion_matrix": [
+        [
+          8898,
+          247
+        ],
+        [
+          190,
+          8566
+        ]
+      ]
+    },
+    "en": {
+      "n_samples": 17684,
+      "n_threat": 8638,
+      "n_benign": 9046,
+      "accuracy": 0.9754,
+      "precision": 0.97171,
+      "recall": 0.97812,
+      "f1": 0.9749,
+      "pr_auc": 0.99545,
+      "roc_auc": 0.99587,
+      "fpr": 0.02719,
+      "fnr": 0.02188,
+      "tp": 8449,
+      "fp": 246,
+      "tn": 8800,
+      "fn": 189,
+      "confusion_matrix": [
+        [
+          8800,
+          246
+        ],
+        [
+          189,
+          8449
+        ]
+      ]
+    },
+    "hi": {
+      "n_samples": 18,
+      "n_threat": 13,
+      "n_benign": 5,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "tp": 13,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "confusion_matrix": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          13
+        ]
+      ]
+    },
+    "hinglish": {
+      "n_samples": 112,
+      "n_threat": 95,
+      "n_benign": 17,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "tp": 95,
+      "fp": 0,
+      "tn": 17,
+      "fn": 0,
+      "confusion_matrix": [
+        [
+          17,
+          0
+        ],
+        [
+          0,
+          95
+        ]
+      ]
+    },
+    "te": {
+      "n_samples": 87,
+      "n_threat": 10,
+      "n_benign": 77,
+      "accuracy": 0.97701,
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "pr_auc": 0.95704,
+      "roc_auc": 0.98506,
+      "fpr": 0.01299,
+      "fnr": 0.1,
+      "tp": 9,
+      "fp": 1,
+      "tn": 76,
+      "fn": 1,
+      "confusion_matrix": [
+        [
+          76,
+          1
+        ],
+        [
+          1,
+          9
+        ]
+      ]
+    }
+  },
+  "telugu_error_analysis": [
+    {
+      "message_id": "1cfff4ba-ec23-5372-be26-ba6609c87d9f",
+      "language": "te",
+      "true_threat": 0,
+      "predicted_threat": 1,
+      "probability": 0.7028,
+      "text_snippet": "Akka nenu Tinku entlo ne unava"
+    },
+    {
+      "message_id": "90be4bd8-a1ca-5618-869a-867f6951ab66",
+      "language": "te",
+      "true_threat": 1,
+      "predicted_threat": 0,
+      "probability": 0.3504,
+      "text_snippet": "\u0c05\u0c28\u0c4d\u0c28\u0c3f \u0c38\u0c2e\u0c38\u0c4d\u0c2f\u0c32 \u0c28\u0c41\u0c02\u0c21\u0c3f \u0c05\u0c27\u0c3f\u0c17\u0c2e\u0c3f\u0c02\u0c1a\u0c02\u0c21\u0c3f.\u0c15\u0c3e\u0c32\u0c4d 556789999"
+    }
+  ]
+}

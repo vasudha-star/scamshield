@@ -1,0 +1,958 @@
+{
+  "timestamp": "2026-10-04T02:17:50.595345",
+  "split_hash": "85851abd839f4971",
+  "global_importance": {
+    "top_threat_features": [
+      {
+        "feature_index": 4399,
+        "feature_name": "email_separator",
+        "weight": 5.21735,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 14048,
+        "feature_name": "url",
+        "weight": 2.69444,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5799,
+        "feature_name": "girl",
+        "weight": 1.78562,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8766,
+        "feature_name": "offer",
+        "weight": 1.66196,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 2409,
+        "feature_name": "click",
+        "weight": 1.65872,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8021,
+        "feature_name": "meds",
+        "weight": 1.57737,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 7384,
+        "feature_name": "life",
+        "weight": 1.57528,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 13380,
+        "feature_name": "theorize",
+        "weight": 1.572,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 4434,
+        "feature_name": "emoji",
+        "weight": 1.53487,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 7552,
+        "feature_name": "loan",
+        "weight": 1.46952,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8008,
+        "feature_name": "medications",
+        "weight": 1.43582,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 9746,
+        "feature_name": "pills",
+        "weight": 1.4072,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 6443,
+        "feature_name": "hurry",
+        "weight": 1.39208,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 584,
+        "feature_name": "aapke",
+        "weight": 1.35578,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5803,
+        "feature_name": "girls",
+        "weight": 1.34762,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 838,
+        "feature_name": "adf",
+        "weight": 1.34028,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 657,
+        "feature_name": "account",
+        "weight": 1.32502,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 10057,
+        "feature_name": "prescription",
+        "weight": 1.31635,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 10558,
+        "feature_name": "promotion",
+        "weight": 1.29022,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5611,
+        "feature_name": "freebsd",
+        "weight": 1.27457,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 3529,
+        "feature_name": "degree",
+        "weight": 1.25709,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 9544,
+        "feature_name": "penis",
+        "weight": 1.23457,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 10115,
+        "feature_name": "price",
+        "weight": 1.22834,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 6425,
+        "feature_name": "huge",
+        "weight": 1.2282,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8319,
+        "feature_name": "mortgage",
+        "weight": 1.22126,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8068,
+        "feature_name": "men",
+        "weight": 1.22076,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 10125,
+        "feature_name": "price financial_info",
+        "weight": 1.21115,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 2130,
+        "feature_name": "casino",
+        "weight": 1.20521,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8790,
+        "feature_name": "offers",
+        "weight": 1.20201,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 14518,
+        "feature_name": "watch",
+        "weight": 1.19914,
+        "modality": "TEXT"
+      }
+    ],
+    "top_benign_features": [
+      {
+        "feature_index": 5687,
+        "feature_name": "fw",
+        "weight": -3.38078,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 13337,
+        "feature_name": "thanks",
+        "weight": -2.89589,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 14861,
+        "feature_name": "wrote",
+        "weight": -2.8215,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 4357,
+        "feature_name": "email url",
+        "weight": -1.92241,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8966,
+        "feature_name": "organization",
+        "weight": -1.84899,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5719,
+        "feature_name": "gas",
+        "weight": -1.72354,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 3317,
+        "feature_name": "date",
+        "weight": -1.6934,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 7476,
+        "feature_name": "list email",
+        "weight": -1.58548,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 7472,
+        "feature_name": "list",
+        "weight": -1.57017,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5596,
+        "feature_name": "free download",
+        "weight": -1.558,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 570,
+        "feature_name": "9fans",
+        "weight": -1.51842,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 8033,
+        "feature_name": "meeting",
+        "weight": -1.45555,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 3905,
+        "feature_name": "dmdx",
+        "weight": -1.44771,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 9788,
+        "feature_name": "plan",
+        "weight": -1.4328,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 11109,
+        "feature_name": "reform",
+        "weight": -1.43157,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 1345,
+        "feature_name": "attached",
+        "weight": -1.42443,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 13393,
+        "feature_name": "think",
+        "weight": -1.40012,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 9677,
+        "feature_name": "phone_number fax",
+        "weight": -1.34944,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5695,
+        "feature_name": "fyi",
+        "weight": -1.31381,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 10745,
+        "feature_name": "questions",
+        "weight": -1.2939,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5071,
+        "feature_name": "feedback",
+        "weight": -1.29197,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 7356,
+        "feature_name": "lh",
+        "weight": -1.288,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5638,
+        "feature_name": "friends online",
+        "weight": -1.26845,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 7785,
+        "feature_name": "mailing list",
+        "weight": -1.25712,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 2308,
+        "feature_name": "cheers",
+        "weight": -1.24026,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 13320,
+        "feature_name": "thank",
+        "weight": -1.22742,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 5505,
+        "feature_name": "forecast",
+        "weight": -1.20979,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 2502,
+        "feature_name": "code",
+        "weight": -1.2059,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 7012,
+        "feature_name": "jio",
+        "weight": -1.2056,
+        "modality": "TEXT"
+      },
+      {
+        "feature_index": 6066,
+        "feature_name": "handyboard",
+        "weight": -1.19552,
+        "modality": "TEXT"
+      }
+    ],
+    "intercept": -0.25124,
+    "total_features": 15028
+  },
+  "archetypes": [
+    {
+      "id": "ARCHETYPE_1_DIGITAL_ARREST",
+      "title": "Digital Arrest & Authority Impersonation Scam",
+      "text": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against your Aadhaar for illegal money laundering. You are placed under digital arrest. Connect immediately to Skype video call or police will raid your house within 2 hours. http://192.168.1.105/cbi-warrant-verification",
+      "category": "digital_arrest",
+      "expected_label": "phishing",
+      "predicted_probability": 0.91701,
+      "decision_value": 0.79836,
+      "risk_score": 100.0,
+      "risk_tier": "CRITICAL",
+      "confidence_level": "HIGH",
+      "summary_explanation": "Potential [Digital Arrest] Attack: This message exhibits alleged law enforcement/official authority, severe time-pressure urgency, suspicious link structures. The psychological coercion pattern is characteristic of social engineering attacks.",
+      "evidence_pillars": {
+        "textual_evidence": [
+          {
+            "category": "Digital Arrest",
+            "matched_keywords": [
+              "digital arrest",
+              "video call",
+              "cbi",
+              "police",
+              "warrant",
+              "money laundering"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "category": "Banking Kyc",
+            "matched_keywords": [
+              "aadhaar"
+            ],
+            "severity": "MEDIUM"
+          },
+          {
+            "category": "Extortion Blackmail",
+            "matched_keywords": [
+              "video"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "category": "Urgency Triggers",
+            "matched_keywords": [
+              "immediately",
+              "urgent",
+              "2 hours"
+            ],
+            "severity": "MEDIUM"
+          }
+        ],
+        "url_structural_evidence": [
+          {
+            "url": "http://192.168.1.105/cbi-warrant-verification",
+            "structural_red_flags": [
+              "URL uses a raw IP address instead of a legitimate domain name.",
+              "URL contains excessive subdomains (2 levels).",
+              "URL exhibits abnormally high character entropy (4.40)."
+            ],
+            "severity": "HIGH"
+          }
+        ],
+        "psychological_intent_evidence": [
+          {
+            "intent": "Urgency & Artificial Time Pressure",
+            "score": 0.63,
+            "description": "The message creates artificial panic demanding immediate action before verification."
+          },
+          {
+            "intent": "Authority Impersonation",
+            "score": 1.0,
+            "description": "The message falsely cites law enforcement, regulators, or government departments."
+          },
+          {
+            "intent": "Fear & Legal Coercion",
+            "score": 1.0,
+            "description": "The message uses severe threats of arrest, prosecution, or financial penalties."
+          }
+        ]
+      },
+      "recommendations": [
+        "Remember: Government and law enforcement agencies never conduct arrests or interrogations over Skype/WhatsApp video calls.",
+        "Do NOT click or open any links in this message. Visit the official organization portal by typing the URL manually in your browser.",
+        "If you suspect fraud, report immediately to the National Cybercrime Portal (cybercrime.gov.in or helpline 1930)."
+      ],
+      "top_threat_shap": [
+        {
+          "feature_name": "INTENT::urgency",
+          "feature_value": 6.7986,
+          "shap_value": 0.72278,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "URL::num_dots",
+          "feature_value": 2.7538,
+          "shap_value": 0.63775,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "URL::num_digits",
+          "feature_value": 2.2093,
+          "shap_value": 0.62611,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "INTENT::fear_threat",
+          "feature_value": 35.3498,
+          "shap_value": 0.43096,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "INTENT::authority_impersonation",
+          "feature_value": 12.2314,
+          "shap_value": 0.32584,
+          "modality": "INTENT"
+        }
+      ],
+      "top_benign_shap": [
+        {
+          "feature_name": "INTENT::social_engineering_score",
+          "feature_value": 8.0719,
+          "shap_value": -0.7244,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "URL::shannon_entropy",
+          "feature_value": 4.7165,
+          "shap_value": -0.67352,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "URL::num_slashes",
+          "feature_value": 11.947,
+          "shap_value": -0.64239,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "immediately",
+          "feature_value": 0.1534,
+          "shap_value": -0.13987,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "URL::num_at_symbols",
+          "feature_value": 13.5162,
+          "shap_value": -0.13839,
+          "modality": "URL"
+        }
+      ]
+    },
+    {
+      "id": "ARCHETYPE_2_BANKING_KYC_PHISHING",
+      "title": "Banking KYC Phishing & Credential Harvest",
+      "text": "Dear SBI Customer, your NetBanking account has been blocked due to pending KYC verification. Please click http://sbi-kyc-update.xyz/login to verify PAN card and enter your NetBanking password immediately to avoid permanent deactivation.",
+      "category": "kyc_banking_identity",
+      "expected_label": "phishing",
+      "predicted_probability": 0.93225,
+      "decision_value": 0.91104,
+      "risk_score": 100.0,
+      "risk_tier": "CRITICAL",
+      "confidence_level": "HIGH",
+      "summary_explanation": "Potential [Kyc Banking Identity] Attack: This message exhibits severe time-pressure urgency, credential harvesting, suspicious link structures. The psychological coercion pattern is characteristic of social engineering attacks.",
+      "evidence_pillars": {
+        "textual_evidence": [
+          {
+            "category": "Banking Kyc",
+            "matched_keywords": [
+              "kyc",
+              "pan card",
+              "blocked",
+              "sbi",
+              "netbanking"
+            ],
+            "severity": "MEDIUM"
+          },
+          {
+            "category": "Credential Harvest",
+            "matched_keywords": [
+              "password"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "category": "Urgency Triggers",
+            "matched_keywords": [
+              "immediately"
+            ],
+            "severity": "MEDIUM"
+          }
+        ],
+        "url_structural_evidence": [
+          {
+            "url": "http://sbi-kyc-update.xyz/login",
+            "structural_red_flags": [
+              "URL exhibits abnormally high character entropy (4.39).",
+              "URL uses a high-risk or unusual top-level domain."
+            ],
+            "severity": "MEDIUM"
+          }
+        ],
+        "psychological_intent_evidence": [
+          {
+            "intent": "Urgency & Artificial Time Pressure",
+            "score": 0.224,
+            "description": "The message creates artificial panic demanding immediate action before verification."
+          },
+          {
+            "intent": "Credential Solicitation",
+            "score": 0.448,
+            "description": "The message directly or indirectly solicits passwords, PINs, or credentials."
+          }
+        ]
+      },
+      "recommendations": [
+        "Never enter your passwords, NetBanking PINs, or card CVVs into non-official web forms.",
+        "Do NOT click or open any links in this message. Visit the official organization portal by typing the URL manually in your browser.",
+        "If you suspect fraud, report immediately to the National Cybercrime Portal (cybercrime.gov.in or helpline 1930)."
+      ],
+      "top_threat_shap": [
+        {
+          "feature_name": "URL::num_dots",
+          "feature_value": 3.8129,
+          "shap_value": 0.88305,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "URL::num_digits",
+          "feature_value": 1.657,
+          "shap_value": 0.46958,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "INTENT::urgency",
+          "feature_value": 2.4158,
+          "shap_value": 0.25683,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "click",
+          "feature_value": 0.1521,
+          "shap_value": 0.25232,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "INTENT::credential_request",
+          "feature_value": 6.1473,
+          "shap_value": 0.25163,
+          "modality": "INTENT"
+        }
+      ],
+      "top_benign_shap": [
+        {
+          "feature_name": "URL::shannon_entropy",
+          "feature_value": 4.7025,
+          "shap_value": -0.67152,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "INTENT::social_engineering_score",
+          "feature_value": 3.6154,
+          "shap_value": -0.32446,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "URL::has_redirect_tokens",
+          "feature_value": 11.8284,
+          "shap_value": -0.22057,
+          "modality": "URL"
+        },
+        {
+          "feature_name": "immediately",
+          "feature_value": 0.2003,
+          "shap_value": -0.1826,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "password",
+          "feature_value": 0.2326,
+          "shap_value": -0.18113,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    {
+      "id": "ARCHETYPE_3_EXTORTION_BLACKMAIL",
+      "title": "Extortion & Blackmail Coercion Scam",
+      "text": "I have recorded a video of you using your webcam while visiting sensitive websites. Pay 0.5 Bitcoin to my wallet immediately or this video will be leaked to all your family, contacts, and colleagues within 24 hours.",
+      "category": "extortion_blackmail",
+      "expected_label": "phishing",
+      "predicted_probability": 0.9424,
+      "decision_value": 0.70679,
+      "risk_score": 99.2,
+      "risk_tier": "CRITICAL",
+      "confidence_level": "HIGH",
+      "summary_explanation": "Potential [Extortion Blackmail] Attack: This message exhibits severe time-pressure urgency. The psychological coercion pattern is characteristic of social engineering attacks.",
+      "evidence_pillars": {
+        "textual_evidence": [
+          {
+            "category": "Extortion Blackmail",
+            "matched_keywords": [
+              "video",
+              "webcam",
+              "family",
+              "contacts"
+            ],
+            "severity": "HIGH"
+          },
+          {
+            "category": "Urgency Triggers",
+            "matched_keywords": [
+              "immediately",
+              "within 24 hours"
+            ],
+            "severity": "MEDIUM"
+          }
+        ],
+        "url_structural_evidence": [],
+        "psychological_intent_evidence": [
+          {
+            "intent": "Urgency & Artificial Time Pressure",
+            "score": 0.431,
+            "description": "The message creates artificial panic demanding immediate action before verification."
+          }
+        ]
+      },
+      "recommendations": [
+        "If you suspect fraud, report immediately to the National Cybercrime Portal (cybercrime.gov.in or helpline 1930)."
+      ],
+      "top_threat_shap": [
+        {
+          "feature_name": "INTENT::urgency",
+          "feature_value": 4.6536,
+          "shap_value": 0.49474,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "webcam",
+          "feature_value": 0.3108,
+          "shap_value": 0.26214,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "websites",
+          "feature_value": 0.2951,
+          "shap_value": 0.17194,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "hours",
+          "feature_value": 0.1716,
+          "shap_value": 0.1636,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "recorded",
+          "feature_value": 0.2774,
+          "shap_value": 0.12509,
+          "modality": "TEXT"
+        }
+      ],
+      "top_benign_shap": [
+        {
+          "feature_name": "immediately",
+          "feature_value": 0.1853,
+          "shap_value": -0.16893,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "INTENT::social_engineering_score",
+          "feature_value": 1.7403,
+          "shap_value": -0.15618,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "using",
+          "feature_value": 0.1442,
+          "shap_value": -0.08187,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "colleagues",
+          "feature_value": 0.2684,
+          "shap_value": -0.06589,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "sensitive",
+          "feature_value": 0.2636,
+          "shap_value": -0.05418,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    {
+      "id": "ARCHETYPE_4_HARD_NEGATIVE_OTP",
+      "title": "Legitimate High-Risk 2FA OTP (Hard Negative)",
+      "text": "Your HDFC Bank NetBanking OTP for login verification is 482910. Valid for 10 minutes. Do not share this OTP with anyone, including bank staff. HDFC Bank will never ask for your password or OTP.",
+      "category": "legitimate",
+      "expected_label": "benign",
+      "predicted_probability": 0.12786,
+      "decision_value": -1.50934,
+      "risk_score": 12.8,
+      "risk_tier": "LOW",
+      "confidence_level": "HIGH",
+      "summary_explanation": "Verified Legitimate Communication (Hard Negative): While security terms (e.g., OTP, login, or verification) were detected, they appear in legitimate banking or advisory context. No coercive extortion or malicious redirect links were found.",
+      "evidence_pillars": {
+        "textual_evidence": [
+          {
+            "category": "Banking Kyc",
+            "matched_keywords": [
+              "hdfc",
+              "netbanking"
+            ],
+            "severity": "MEDIUM"
+          },
+          {
+            "category": "Credential Harvest",
+            "matched_keywords": [
+              "otp",
+              "password"
+            ],
+            "severity": "HIGH"
+          }
+        ],
+        "url_structural_evidence": [],
+        "psychological_intent_evidence": [
+          {
+            "intent": "Credential Solicitation",
+            "score": 0.22,
+            "description": "The message directly or indirectly solicits passwords, PINs, or credentials."
+          }
+        ]
+      },
+      "recommendations": [
+        "Never enter your passwords, NetBanking PINs, or card CVVs into non-official web forms.",
+        "If you suspect fraud, report immediately to the National Cybercrime Portal (cybercrime.gov.in or helpline 1930)."
+      ],
+      "top_threat_shap": [
+        {
+          "feature_name": "INTENT::credential_request",
+          "feature_value": 3.0126,
+          "shap_value": 0.12331,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "minutes",
+          "feature_value": 0.1931,
+          "shap_value": 0.11267,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "verification",
+          "feature_value": 0.1917,
+          "shap_value": 0.06534,
+          "modality": "TEXT"
+        }
+      ],
+      "top_benign_shap": [
+        {
+          "feature_name": "otp",
+          "feature_value": 0.6126,
+          "shap_value": -0.40735,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "INTENT::social_engineering_score",
+          "feature_value": 3.5436,
+          "shap_value": -0.31801,
+          "modality": "INTENT"
+        },
+        {
+          "feature_name": "password",
+          "feature_value": 0.2044,
+          "shap_value": -0.15919,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "10 minutes",
+          "feature_value": 0.314,
+          "shap_value": -0.15707,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "login",
+          "feature_value": 0.2175,
+          "shap_value": -0.12869,
+          "modality": "TEXT"
+        }
+      ]
+    },
+    {
+      "id": "ARCHETYPE_5_BENIGN_WORK_EMAIL",
+      "title": "Routine Legitimate Business Communication",
+      "text": "Hi team, please find attached the meeting agenda and presentation slides for tomorrow's quarterly engineering review. Thanks, wrote John.",
+      "category": "legitimate",
+      "expected_label": "benign",
+      "predicted_probability": 0.00024,
+      "decision_value": -2.70196,
+      "risk_score": 0.0,
+      "risk_tier": "LOW",
+      "confidence_level": "HIGH",
+      "summary_explanation": "Verified Communication: No coercive psychological patterns, deceptive authority impersonation, or suspicious URL structures were detected.",
+      "evidence_pillars": {
+        "textual_evidence": [],
+        "url_structural_evidence": [],
+        "psychological_intent_evidence": []
+      },
+      "recommendations": [
+        "If you suspect fraud, report immediately to the National Cybercrime Portal (cybercrime.gov.in or helpline 1930)."
+      ],
+      "top_threat_shap": [
+        {
+          "feature_name": "john",
+          "feature_value": 0.324,
+          "shap_value": 0.04692,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "quarterly",
+          "feature_value": 0.3741,
+          "shap_value": 0.00843,
+          "modality": "TEXT"
+        }
+      ],
+      "top_benign_shap": [
+        {
+          "feature_name": "wrote",
+          "feature_value": 0.1727,
+          "shap_value": -0.48725,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "thanks",
+          "feature_value": 0.1444,
+          "shap_value": -0.41819,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "meeting",
+          "feature_value": 0.2246,
+          "shap_value": -0.32685,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "attached",
+          "feature_value": 0.1941,
+          "shap_value": -0.27645,
+          "modality": "TEXT"
+        },
+        {
+          "feature_name": "tomorrow",
+          "feature_value": 0.2574,
+          "shap_value": -0.23444,
+          "modality": "TEXT"
+        }
+      ]
+    }
+  ],
+  "calibration": {
+    "n_samples": 17901,
+    "mean_phishing_risk_score": 92.76,
+    "median_phishing_risk_score": 98.3,
+    "mean_benign_risk_score": 8.54,
+    "median_benign_risk_score": 3.1,
+    "overall_tier_breakdown": {
+      "LOW": 8546,
+      "CRITICAL": 7428,
+      "HIGH": 1215,
+      "MEDIUM": 712
+    },
+    "phishing_tier_breakdown": {
+      "CRITICAL": 7381,
+      "HIGH": 1094,
+      "MEDIUM": 217,
+      "LOW": 64
+    },
+    "benign_tier_breakdown": {
+      "LOW": 8482,
+      "MEDIUM": 495,
+      "HIGH": 121,
+      "CRITICAL": 47
+    },
+    "phishing_high_or_critical_pct": 96.79,
+    "benign_low_pct": 92.75
+  },
+  "elapsed_seconds": 3.74
+}

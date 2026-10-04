@@ -1,0 +1,427 @@
+{
+  "execution_timestamp": "2026-10-03T20:16:40.878436+00:00",
+  "in_distribution_evaluation": {
+    "M1_Text": {
+      "n_samples": 941,
+      "false_positives": 31,
+      "true_negatives": 910,
+      "false_positive_rate": 0.03294,
+      "specificity": 0.96706,
+      "mean_threat_prob": 0.10195,
+      "keyword_breakdown": {
+        "otp": {
+          "total": 32,
+          "fp": 0,
+          "fpr": 0.0
+        },
+        "verify": {
+          "total": 69,
+          "fp": 1,
+          "fpr": 0.0145
+        },
+        "urgent": {
+          "total": 36,
+          "fp": 1,
+          "fpr": 0.0278
+        },
+        "account": {
+          "total": 261,
+          "fp": 13,
+          "fpr": 0.0498
+        },
+        "bank": {
+          "total": 85,
+          "fp": 4,
+          "fpr": 0.0471
+        },
+        "password": {
+          "total": 122,
+          "fp": 2,
+          "fpr": 0.0164
+        },
+        "security": {
+          "total": 155,
+          "fp": 10,
+          "fpr": 0.0645
+        },
+        "alert": {
+          "total": 313,
+          "fp": 6,
+          "fpr": 0.0192
+        },
+        "login": {
+          "total": 60,
+          "fp": 4,
+          "fpr": 0.0667
+        }
+      }
+    },
+    "M2_Text_URL": {
+      "n_samples": 941,
+      "false_positives": 34,
+      "true_negatives": 907,
+      "false_positive_rate": 0.03613,
+      "specificity": 0.96387,
+      "mean_threat_prob": 0.11304,
+      "keyword_breakdown": {
+        "otp": {
+          "total": 32,
+          "fp": 0,
+          "fpr": 0.0
+        },
+        "verify": {
+          "total": 69,
+          "fp": 1,
+          "fpr": 0.0145
+        },
+        "urgent": {
+          "total": 36,
+          "fp": 1,
+          "fpr": 0.0278
+        },
+        "account": {
+          "total": 261,
+          "fp": 16,
+          "fpr": 0.0613
+        },
+        "bank": {
+          "total": 85,
+          "fp": 5,
+          "fpr": 0.0588
+        },
+        "password": {
+          "total": 122,
+          "fp": 2,
+          "fpr": 0.0164
+        },
+        "security": {
+          "total": 155,
+          "fp": 10,
+          "fpr": 0.0645
+        },
+        "alert": {
+          "total": 313,
+          "fp": 7,
+          "fpr": 0.0224
+        },
+        "login": {
+          "total": 60,
+          "fp": 5,
+          "fpr": 0.0833
+        }
+      }
+    },
+    "M3_Text_Intent": {
+      "n_samples": 941,
+      "false_positives": 30,
+      "true_negatives": 911,
+      "false_positive_rate": 0.03188,
+      "specificity": 0.96812,
+      "mean_threat_prob": 0.10074,
+      "keyword_breakdown": {
+        "otp": {
+          "total": 32,
+          "fp": 0,
+          "fpr": 0.0
+        },
+        "verify": {
+          "total": 69,
+          "fp": 1,
+          "fpr": 0.0145
+        },
+        "urgent": {
+          "total": 36,
+          "fp": 2,
+          "fpr": 0.0556
+        },
+        "account": {
+          "total": 261,
+          "fp": 12,
+          "fpr": 0.046
+        },
+        "bank": {
+          "total": 85,
+          "fp": 4,
+          "fpr": 0.0471
+        },
+        "password": {
+          "total": 122,
+          "fp": 2,
+          "fpr": 0.0164
+        },
+        "security": {
+          "total": 155,
+          "fp": 9,
+          "fpr": 0.0581
+        },
+        "alert": {
+          "total": 313,
+          "fp": 7,
+          "fpr": 0.0224
+        },
+        "login": {
+          "total": 60,
+          "fp": 3,
+          "fpr": 0.05
+        }
+      }
+    },
+    "M4_Full": {
+      "n_samples": 941,
+      "false_positives": 33,
+      "true_negatives": 908,
+      "false_positive_rate": 0.03507,
+      "specificity": 0.96493,
+      "mean_threat_prob": 0.11698,
+      "keyword_breakdown": {
+        "otp": {
+          "total": 32,
+          "fp": 0,
+          "fpr": 0.0
+        },
+        "verify": {
+          "total": 69,
+          "fp": 1,
+          "fpr": 0.0145
+        },
+        "urgent": {
+          "total": 36,
+          "fp": 3,
+          "fpr": 0.0833
+        },
+        "account": {
+          "total": 261,
+          "fp": 15,
+          "fpr": 0.0575
+        },
+        "bank": {
+          "total": 85,
+          "fp": 5,
+          "fpr": 0.0588
+        },
+        "password": {
+          "total": 122,
+          "fp": 2,
+          "fpr": 0.0164
+        },
+        "security": {
+          "total": 155,
+          "fp": 9,
+          "fpr": 0.0581
+        },
+        "alert": {
+          "total": 313,
+          "fp": 7,
+          "fpr": 0.0224
+        },
+        "login": {
+          "total": 60,
+          "fp": 4,
+          "fpr": 0.0667
+        }
+      }
+    }
+  },
+  "curated_challenge_evaluation": {
+    "M1_Text": {
+      "n_samples": 40,
+      "false_positives": 13,
+      "true_negatives": 27,
+      "false_positive_rate": 0.325,
+      "specificity": 0.675,
+      "mean_threat_prob": 0.43313,
+      "category_breakdown": {
+        "banking_otp": {
+          "total": 10,
+          "fp": 4,
+          "fpr": 0.4,
+          "mean_prob": 0.4646
+        },
+        "delivery_logistics": {
+          "total": 5,
+          "fp": 1,
+          "fpr": 0.2,
+          "mean_prob": 0.3902
+        },
+        "multilingual": {
+          "total": 10,
+          "fp": 3,
+          "fpr": 0.3,
+          "mean_prob": 0.4527
+        },
+        "security_2fa": {
+          "total": 10,
+          "fp": 5,
+          "fpr": 0.5,
+          "mean_prob": 0.5384
+        },
+        "statutory_gov": {
+          "total": 5,
+          "fp": 0,
+          "fpr": 0.0,
+          "mean_prob": 0.1635
+        }
+      }
+    },
+    "M2_Text_URL": {
+      "n_samples": 40,
+      "false_positives": 14,
+      "true_negatives": 26,
+      "false_positive_rate": 0.35,
+      "specificity": 0.65,
+      "mean_threat_prob": 0.44172,
+      "category_breakdown": {
+        "banking_otp": {
+          "total": 10,
+          "fp": 4,
+          "fpr": 0.4,
+          "mean_prob": 0.462
+        },
+        "delivery_logistics": {
+          "total": 5,
+          "fp": 1,
+          "fpr": 0.2,
+          "mean_prob": 0.4039
+        },
+        "multilingual": {
+          "total": 10,
+          "fp": 4,
+          "fpr": 0.4,
+          "mean_prob": 0.4681
+        },
+        "security_2fa": {
+          "total": 10,
+          "fp": 5,
+          "fpr": 0.5,
+          "mean_prob": 0.5391
+        },
+        "statutory_gov": {
+          "total": 5,
+          "fp": 0,
+          "fpr": 0.0,
+          "mean_prob": 0.1916
+        }
+      }
+    },
+    "M3_Text_Intent": {
+      "n_samples": 40,
+      "false_positives": 14,
+      "true_negatives": 26,
+      "false_positive_rate": 0.35,
+      "specificity": 0.65,
+      "mean_threat_prob": 0.42844,
+      "category_breakdown": {
+        "banking_otp": {
+          "total": 10,
+          "fp": 4,
+          "fpr": 0.4,
+          "mean_prob": 0.4609
+        },
+        "delivery_logistics": {
+          "total": 5,
+          "fp": 1,
+          "fpr": 0.2,
+          "mean_prob": 0.3882
+        },
+        "multilingual": {
+          "total": 10,
+          "fp": 4,
+          "fpr": 0.4,
+          "mean_prob": 0.4541
+        },
+        "security_2fa": {
+          "total": 10,
+          "fp": 5,
+          "fpr": 0.5,
+          "mean_prob": 0.5283
+        },
+        "statutory_gov": {
+          "total": 5,
+          "fp": 0,
+          "fpr": 0.0,
+          "mean_prob": 0.1527
+        }
+      }
+    },
+    "M4_Full": {
+      "n_samples": 40,
+      "false_positives": 15,
+      "true_negatives": 25,
+      "false_positive_rate": 0.375,
+      "specificity": 0.625,
+      "mean_threat_prob": 0.44239,
+      "category_breakdown": {
+        "banking_otp": {
+          "total": 10,
+          "fp": 4,
+          "fpr": 0.4,
+          "mean_prob": 0.4562
+        },
+        "delivery_logistics": {
+          "total": 5,
+          "fp": 1,
+          "fpr": 0.2,
+          "mean_prob": 0.407
+        },
+        "multilingual": {
+          "total": 10,
+          "fp": 5,
+          "fpr": 0.5,
+          "mean_prob": 0.4771
+        },
+        "security_2fa": {
+          "total": 10,
+          "fp": 5,
+          "fpr": 0.5,
+          "mean_prob": 0.537
+        },
+        "statutory_gov": {
+          "total": 5,
+          "fp": 0,
+          "fpr": 0.0,
+          "mean_prob": 0.1914
+        }
+      }
+    },
+    "XLM_RoBERTa": {
+      "n_samples": 40,
+      "false_positives": 13,
+      "true_negatives": 27,
+      "false_positive_rate": 0.325,
+      "specificity": 0.675,
+      "mean_threat_prob": 0.33848,
+      "category_breakdown": {
+        "banking_otp": {
+          "total": 10,
+          "fp": 2,
+          "fpr": 0.2,
+          "mean_prob": 0.2329
+        },
+        "delivery_logistics": {
+          "total": 5,
+          "fp": 3,
+          "fpr": 0.6,
+          "mean_prob": 0.5989
+        },
+        "multilingual": {
+          "total": 10,
+          "fp": 7,
+          "fpr": 0.7,
+          "mean_prob": 0.6998
+        },
+        "security_2fa": {
+          "total": 10,
+          "fp": 1,
+          "fpr": 0.1,
+          "mean_prob": 0.1155
+        },
+        "statutory_gov": {
+          "total": 5,
+          "fp": 0,
+          "fpr": 0.0,
+          "mean_prob": 0.0126
+        }
+      }
+    }
+  }
+}

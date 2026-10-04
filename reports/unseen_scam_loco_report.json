@@ -1,0 +1,178 @@
+{
+  "execution_timestamp": "2026-10-03T20:31:41.196410+00:00",
+  "split_hash": "85851abd839f4971",
+  "loco_by_category": {
+    "digital_arrest": {
+      "M1_Text": {
+        "zero_day_recall": 0.9821,
+        "caught_count": 55,
+        "total_held_test": 56,
+        "benign_fpr": 0.02231,
+        "specificity": 0.97769
+      },
+      "M2_Text_URL": {
+        "zero_day_recall": 0.9643,
+        "caught_count": 54,
+        "total_held_test": 56,
+        "benign_fpr": 0.02253,
+        "specificity": 0.97747
+      },
+      "M3_Text_Intent": {
+        "zero_day_recall": 0.9821,
+        "caught_count": 55,
+        "total_held_test": 56,
+        "benign_fpr": 0.02231,
+        "specificity": 0.97769
+      },
+      "M4_Full": {
+        "zero_day_recall": 0.9821,
+        "caught_count": 55,
+        "total_held_test": 56,
+        "benign_fpr": 0.02296,
+        "specificity": 0.97704
+      }
+    },
+    "extortion_blackmail": {
+      "M1_Text": {
+        "zero_day_recall": 0.7895,
+        "caught_count": 15,
+        "total_held_test": 19,
+        "benign_fpr": 0.02231,
+        "specificity": 0.97769
+      },
+      "M2_Text_URL": {
+        "zero_day_recall": 0.7895,
+        "caught_count": 15,
+        "total_held_test": 19,
+        "benign_fpr": 0.0222,
+        "specificity": 0.9778
+      },
+      "M3_Text_Intent": {
+        "zero_day_recall": 0.7895,
+        "caught_count": 15,
+        "total_held_test": 19,
+        "benign_fpr": 0.02242,
+        "specificity": 0.97758
+      },
+      "M4_Full": {
+        "zero_day_recall": 0.8947,
+        "caught_count": 17,
+        "total_held_test": 19,
+        "benign_fpr": 0.02285,
+        "specificity": 0.97715
+      }
+    },
+    "kyc_banking_identity": {
+      "M1_Text": {
+        "zero_day_recall": 1.0,
+        "caught_count": 6,
+        "total_held_test": 6,
+        "benign_fpr": 0.02231,
+        "specificity": 0.97769
+      },
+      "M2_Text_URL": {
+        "zero_day_recall": 1.0,
+        "caught_count": 6,
+        "total_held_test": 6,
+        "benign_fpr": 0.02231,
+        "specificity": 0.97769
+      },
+      "M3_Text_Intent": {
+        "zero_day_recall": 1.0,
+        "caught_count": 6,
+        "total_held_test": 6,
+        "benign_fpr": 0.02242,
+        "specificity": 0.97758
+      },
+      "M4_Full": {
+        "zero_day_recall": 1.0,
+        "caught_count": 6,
+        "total_held_test": 6,
+        "benign_fpr": 0.02285,
+        "specificity": 0.97715
+      }
+    },
+    "impersonation_scam": {
+      "M1_Text": {
+        "zero_day_recall": 1.0,
+        "caught_count": 10,
+        "total_held_test": 10,
+        "benign_fpr": 0.02242,
+        "specificity": 0.97758
+      },
+      "M2_Text_URL": {
+        "zero_day_recall": 1.0,
+        "caught_count": 10,
+        "total_held_test": 10,
+        "benign_fpr": 0.02231,
+        "specificity": 0.97769
+      },
+      "M3_Text_Intent": {
+        "zero_day_recall": 1.0,
+        "caught_count": 10,
+        "total_held_test": 10,
+        "benign_fpr": 0.0222,
+        "specificity": 0.9778
+      },
+      "M4_Full": {
+        "zero_day_recall": 1.0,
+        "caught_count": 10,
+        "total_held_test": 10,
+        "benign_fpr": 0.02242,
+        "specificity": 0.97758
+      }
+    },
+    "lottery_reward": {
+      "M1_Text": {
+        "zero_day_recall": 1.0,
+        "caught_count": 4,
+        "total_held_test": 4,
+        "benign_fpr": 0.02253,
+        "specificity": 0.97747
+      },
+      "M2_Text_URL": {
+        "zero_day_recall": 1.0,
+        "caught_count": 4,
+        "total_held_test": 4,
+        "benign_fpr": 0.02242,
+        "specificity": 0.97758
+      },
+      "M3_Text_Intent": {
+        "zero_day_recall": 1.0,
+        "caught_count": 4,
+        "total_held_test": 4,
+        "benign_fpr": 0.02231,
+        "specificity": 0.97769
+      },
+      "M4_Full": {
+        "zero_day_recall": 1.0,
+        "caught_count": 4,
+        "total_held_test": 4,
+        "benign_fpr": 0.02253,
+        "specificity": 0.97747
+      }
+    }
+  },
+  "macro_summary": {
+    "M1_Text": {
+      "macro_zero_day_recall": 0.9543,
+      "macro_benign_fpr": 0.02238,
+      "macro_specificity": 0.97762
+    },
+    "M2_Text_URL": {
+      "macro_zero_day_recall": 0.9508,
+      "macro_benign_fpr": 0.02235,
+      "macro_specificity": 0.97765
+    },
+    "M3_Text_Intent": {
+      "macro_zero_day_recall": 0.9543,
+      "macro_benign_fpr": 0.02233,
+      "macro_specificity": 0.97767
+    },
+    "M4_Full": {
+      "macro_zero_day_recall": 0.9754,
+      "macro_benign_fpr": 0.02272,
+      "macro_specificity": 0.97728
+    }
+  }
+}

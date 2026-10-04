@@ -1,0 +1,90 @@
+{
+  "split_summary": {
+    "total_records": 119339,
+    "train_records": 83537,
+    "train_percentage": 70.0,
+    "validation_records": 17901,
+    "validation_percentage": 15.0,
+    "test_records": 17901,
+    "test_percentage": 15.0,
+    "split_fingerprint_sha256": "85851abd839f4971",
+    "random_seed": 42
+  },
+  "labels_by_split": {
+    "test": {
+      "benign": 9145,
+      "phishing": 8517,
+      "scam": 95,
+      "spam": 144
+    },
+    "train": {
+      "benign": 42672,
+      "phishing": 39747,
+      "scam": 443,
+      "spam": 675
+    },
+    "validation": {
+      "benign": 9143,
+      "phishing": 8518,
+      "scam": 95,
+      "spam": 145
+    }
+  },
+  "source_datasets_by_split": {
+    "test": {
+      "dravidian_sms": 573,
+      "indian_scam": 112,
+      "llm_phishing": 1498,
+      "meajor": 15718
+    },
+    "train": {
+      "dravidian_sms": 2676,
+      "indian_scam": 520,
+      "llm_phishing": 6990,
+      "meajor": 73351
+    },
+    "validation": {
+      "dravidian_sms": 573,
+      "indian_scam": 111,
+      "llm_phishing": 1498,
+      "meajor": 15719
+    }
+  },
+  "languages_by_split": {
+    "test": {
+      "en": 17684,
+      "hi": 18,
+      "hinglish": 112,
+      "te": 87
+    },
+    "train": {
+      "en": 82531,
+      "hi": 67,
+      "hinglish": 520,
+      "te": 419
+    },
+    "validation": {
+      "en": 17697,
+      "hi": 13,
+      "hinglish": 111,
+      "te": 80
+    }
+  },
+  "channels_by_split": {
+    "test": {
+      "email": 17216,
+      "sms": 573,
+      "transcript": 112
+    },
+    "train": {
+      "email": 80341,
+      "sms": 2676,
+      "transcript": 520
+    },
+    "validation": {
+      "email": 17217,
+      "sms": 573,
+      "transcript": 111
+    }
+  }
+}

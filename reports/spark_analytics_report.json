@@ -1,0 +1,83 @@
+{
+  "execution_summary": {
+    "records_processed": 119340,
+    "processing_time_sec": 24.89,
+    "throughput_records_per_sec": 4794.7,
+    "spark_partitions": 12,
+    "write_time_sec": 3.47,
+    "output_size_mb": 74.35,
+    "output_directory": "data/interim"
+  },
+  "records_by_source": [
+    {
+      "source_dataset": "meajor",
+      "count": 104789,
+      "avg_length": 1218.18,
+      "url_count": 62257
+    },
+    {
+      "source_dataset": "indian_scam",
+      "count": 743,
+      "avg_length": 90.53,
+      "url_count": 0
+    },
+    {
+      "source_dataset": "dravidian_sms",
+      "count": 3822,
+      "avg_length": 144.42,
+      "url_count": 1527
+    },
+    {
+      "source_dataset": "llm_phishing",
+      "count": 9986,
+      "avg_length": 1222.2,
+      "url_count": 4978
+    }
+  ],
+  "records_by_language": [
+    {
+      "language": "en",
+      "count": 117913
+    },
+    {
+      "language": "hinglish",
+      "count": 743
+    },
+    {
+      "language": "te",
+      "count": 586
+    },
+    {
+      "language": "hi",
+      "count": 98
+    }
+  ],
+  "records_by_label": [
+    {
+      "project_label": "benign",
+      "count": 60960
+    },
+    {
+      "project_label": "phishing",
+      "count": 56782
+    },
+    {
+      "project_label": "spam",
+      "count": 964
+    },
+    {
+      "project_label": "scam",
+      "count": 633
+    },
+    {
+      "project_label": "unknown",
+      "count": 1
+    }
+  ],
+  "text_length_distribution": {
+    "min_length": 1.0,
+    "max_length": 30909.0,
+    "mean_length": 1177.11,
+    "stddev_length": 1103.03
+  }
+}

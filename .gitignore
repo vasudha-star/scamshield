@@ -45,3 +45,13 @@ Thumbs.db
 .vscode/
 .idea/
 data/raw/llm_generated_phishing/cross-model-phishing/code/
+
+# Oversized Model Weights (>100MB rejected by GitHub)
+models/xlm_roberta_scamshield/
+*.safetensors
+*.bin
+
+# Feature caches and test prediction parquets
+*.npz
+experiments/**/*.npz
+experiments/**/*.parquet

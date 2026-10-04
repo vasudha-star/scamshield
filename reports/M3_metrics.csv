@@ -1,0 +1,4 @@
+Model,Features,precision,recall,f1,roc_auc,pr_auc,fpr,fnr,tp,fp,tn,fn
+M1_Text_Baseline,Text TF-IDF (15k),0.97372,0.9775,0.97561,0.996,0.99561,0.02526,0.0225,8559,231,8914,197
+M2_Text_URL,Text TF-IDF (15k) + URL (18),0.97208,0.9783,0.97518,0.99588,0.99545,0.0269,0.0217,8566,246,8899,190
+M3_Text_Intent,Text TF-IDF (15k) + Intent (10),0.97483,0.97773,0.97628,0.99603,0.99568,0.02417,0.02227,8561,221,8924,195

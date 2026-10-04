@@ -1,0 +1,158 @@
+{
+  "execution_timestamp": "2026-10-03T20:11:16.882678+00:00",
+  "split_hash": "85851abd839f4971",
+  "monolingual_scaling": [
+    {
+      "subset_size": 25,
+      "actual_samples": 25,
+      "threats_in_train": 3,
+      "benign_in_train": 22,
+      "vocabulary_size": 340,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "accuracy": 0.977,
+      "pr_auc": 0.9639,
+      "roc_auc": 0.9831
+    },
+    {
+      "subset_size": 50,
+      "actual_samples": 50,
+      "threats_in_train": 5,
+      "benign_in_train": 45,
+      "vocabulary_size": 561,
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1": 0.8889,
+      "accuracy": 0.977,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "subset_size": 100,
+      "actual_samples": 100,
+      "threats_in_train": 11,
+      "benign_in_train": 89,
+      "vocabulary_size": 1021,
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1": 0.8235,
+      "accuracy": 0.9655,
+      "pr_auc": 0.9799,
+      "roc_auc": 0.9974
+    },
+    {
+      "subset_size": 200,
+      "actual_samples": 200,
+      "threats_in_train": 21,
+      "benign_in_train": 179,
+      "vocabulary_size": 1719,
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.9474,
+      "accuracy": 0.9885,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "subset_size": 300,
+      "actual_samples": 300,
+      "threats_in_train": 32,
+      "benign_in_train": 268,
+      "vocabulary_size": 2141,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0
+    },
+    {
+      "subset_size": 419,
+      "actual_samples": 419,
+      "threats_in_train": 45,
+      "benign_in_train": 374,
+      "vocabulary_size": 2586,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0
+    }
+  ],
+  "global_crosslingual_scaling": [
+    {
+      "subset_size": 100,
+      "actual_samples": 100,
+      "telugu_samples_in_train": 0,
+      "vocabulary_size": 15000,
+      "precision": 0.1739,
+      "recall": 0.8,
+      "f1": 0.2857,
+      "accuracy": 0.5402,
+      "pr_auc": 0.4987,
+      "roc_auc": 0.7903
+    },
+    {
+      "subset_size": 250,
+      "actual_samples": 250,
+      "telugu_samples_in_train": 0,
+      "vocabulary_size": 15000,
+      "precision": 0.2381,
+      "recall": 1.0,
+      "f1": 0.3846,
+      "accuracy": 0.6322,
+      "pr_auc": 0.4017,
+      "roc_auc": 0.7675
+    },
+    {
+      "subset_size": 500,
+      "actual_samples": 500,
+      "telugu_samples_in_train": 1,
+      "vocabulary_size": 15000,
+      "precision": 0.225,
+      "recall": 0.9,
+      "f1": 0.36,
+      "accuracy": 0.6322,
+      "pr_auc": 0.398,
+      "roc_auc": 0.7519
+    },
+    {
+      "subset_size": 1000,
+      "actual_samples": 1000,
+      "telugu_samples_in_train": 5,
+      "vocabulary_size": 15000,
+      "precision": 0.2222,
+      "recall": 0.8,
+      "f1": 0.3478,
+      "accuracy": 0.6552,
+      "pr_auc": 0.546,
+      "roc_auc": 0.8468
+    },
+    {
+      "subset_size": 2000,
+      "actual_samples": 2000,
+      "telugu_samples_in_train": 10,
+      "vocabulary_size": 15000,
+      "precision": 0.2222,
+      "recall": 0.8,
+      "f1": 0.3478,
+      "accuracy": 0.6552,
+      "pr_auc": 0.5456,
+      "roc_auc": 0.8558
+    },
+    {
+      "subset_size": 83537,
+      "actual_samples": 83537,
+      "telugu_samples_in_train": 419,
+      "vocabulary_size": 15000,
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "accuracy": 0.977,
+      "pr_auc": 0.9611,
+      "roc_auc": 0.9857
+    }
+  ]
+}

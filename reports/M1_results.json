@@ -1,0 +1,63 @@
+{
+  "model_id": "M1_text",
+  "model_architecture": "CalibratedLinearSVC",
+  "features": "TF-IDF (1,2 n-grams, 15k features, sublinear tf)",
+  "random_seed": 42,
+  "candidate_validation_benchmarks": {
+    "MultinomialNB": {
+      "precision": 0.96949,
+      "recall": 0.92521,
+      "f1": 0.94683,
+      "roc_auc": 0.98953,
+      "pr_auc": 0.99001,
+      "fpr": 0.02789,
+      "fnr": 0.07479,
+      "tp": 8103,
+      "fp": 255,
+      "tn": 8888,
+      "fn": 655,
+      "fit_time_seconds": 0.06
+    },
+    "LogisticRegression": {
+      "precision": 0.9723,
+      "recall": 0.96997,
+      "f1": 0.97113,
+      "roc_auc": 0.99632,
+      "pr_auc": 0.99592,
+      "fpr": 0.02647,
+      "fnr": 0.03003,
+      "tp": 8495,
+      "fp": 242,
+      "tn": 8901,
+      "fn": 263,
+      "fit_time_seconds": 0.86
+    },
+    "CalibratedLinearSVC": {
+      "precision": 0.97619,
+      "recall": 0.97853,
+      "f1": 0.97736,
+      "roc_auc": 0.99621,
+      "pr_auc": 0.99574,
+      "fpr": 0.02286,
+      "fnr": 0.02147,
+      "tp": 8570,
+      "fp": 209,
+      "tn": 8934,
+      "fn": 188,
+      "fit_time_seconds": 3.67
+    }
+  },
+  "final_test_metrics": {
+    "precision": 0.97372,
+    "recall": 0.9775,
+    "f1": 0.97561,
+    "roc_auc": 0.996,
+    "pr_auc": 0.99561,
+    "fpr": 0.02526,
+    "fnr": 0.0225,
+    "tp": 8559,
+    "fp": 231,
+    "tn": 8914,
+    "fn": 197
+  }
+}

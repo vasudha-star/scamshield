@@ -1,0 +1,283 @@
+{
+  "execution_timestamp": "2026-10-03T20:05:29.196640+00:00",
+  "model_architecture": "xlm-roberta-base (SequenceClassification)",
+  "parameter_count": 278045186,
+  "device": "cuda",
+  "inference_latency_ms": 7.4,
+  "split_hash": "85851abd839f4971",
+  "training_samples": 3006,
+  "xlm_metrics": {
+    "te": {
+      "n_samples": 87,
+      "n_threat": 10,
+      "n_benign": 77,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "tp": 10,
+      "fp": 0,
+      "tn": 77,
+      "fn": 0,
+      "confusion_matrix": [
+        [
+          77,
+          0
+        ],
+        [
+          0,
+          10
+        ]
+      ]
+    },
+    "hinglish": {
+      "n_samples": 112,
+      "n_threat": 95,
+      "n_benign": 17,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "tp": 95,
+      "fp": 0,
+      "tn": 17,
+      "fn": 0,
+      "confusion_matrix": [
+        [
+          17,
+          0
+        ],
+        [
+          0,
+          95
+        ]
+      ]
+    },
+    "hi": {
+      "n_samples": 18,
+      "n_threat": 13,
+      "n_benign": 5,
+      "accuracy": 0.88889,
+      "precision": 0.86667,
+      "recall": 1.0,
+      "f1": 0.92857,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "fpr": 0.4,
+      "fnr": 0.0,
+      "tp": 13,
+      "fp": 2,
+      "tn": 3,
+      "fn": 0,
+      "confusion_matrix": [
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          13
+        ]
+      ]
+    },
+    "en": {
+      "n_samples": 1000,
+      "n_threat": 454,
+      "n_benign": 546,
+      "accuracy": 0.958,
+      "precision": 0.97907,
+      "recall": 0.92731,
+      "f1": 0.95249,
+      "pr_auc": 0.98382,
+      "roc_auc": 0.98685,
+      "fpr": 0.01648,
+      "fnr": 0.07269,
+      "tp": 421,
+      "fp": 9,
+      "tn": 537,
+      "fn": 33,
+      "confusion_matrix": [
+        [
+          537,
+          9
+        ],
+        [
+          33,
+          421
+        ]
+      ]
+    },
+    "multilingual_test_aggregate": {
+      "n_samples": 1217,
+      "n_threat": 572,
+      "n_benign": 645,
+      "accuracy": 0.96385,
+      "precision": 0.98,
+      "recall": 0.94231,
+      "f1": 0.96078,
+      "pr_auc": 0.98942,
+      "roc_auc": 0.98996,
+      "fpr": 0.01705,
+      "fnr": 0.05769,
+      "tp": 539,
+      "fp": 11,
+      "tn": 634,
+      "fn": 33,
+      "confusion_matrix": [
+        [
+          634,
+          11
+        ],
+        [
+          33,
+          539
+        ]
+      ]
+    }
+  },
+  "m4_classical_metrics": {
+    "overall": {
+      "n_samples": 17901,
+      "n_threat": 8756,
+      "n_benign": 9145,
+      "accuracy": 0.97559,
+      "precision": 0.97197,
+      "recall": 0.9783,
+      "f1": 0.97513,
+      "pr_auc": 0.99545,
+      "roc_auc": 0.99586,
+      "fpr": 0.02701,
+      "fnr": 0.0217,
+      "tp": 8566,
+      "fp": 247,
+      "tn": 8898,
+      "fn": 190,
+      "confusion_matrix": [
+        [
+          8898,
+          247
+        ],
+        [
+          190,
+          8566
+        ]
+      ]
+    },
+    "en": {
+      "n_samples": 17684,
+      "n_threat": 8638,
+      "n_benign": 9046,
+      "accuracy": 0.9754,
+      "precision": 0.97171,
+      "recall": 0.97812,
+      "f1": 0.9749,
+      "pr_auc": 0.99545,
+      "roc_auc": 0.99587,
+      "fpr": 0.02719,
+      "fnr": 0.02188,
+      "tp": 8449,
+      "fp": 246,
+      "tn": 8800,
+      "fn": 189,
+      "confusion_matrix": [
+        [
+          8800,
+          246
+        ],
+        [
+          189,
+          8449
+        ]
+      ]
+    },
+    "hi": {
+      "n_samples": 18,
+      "n_threat": 13,
+      "n_benign": 5,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "tp": 13,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "confusion_matrix": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          13
+        ]
+      ]
+    },
+    "hinglish": {
+      "n_samples": 112,
+      "n_threat": 95,
+      "n_benign": 17,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "pr_auc": 1.0,
+      "roc_auc": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "tp": 95,
+      "fp": 0,
+      "tn": 17,
+      "fn": 0,
+      "confusion_matrix": [
+        [
+          17,
+          0
+        ],
+        [
+          0,
+          95
+        ]
+      ]
+    },
+    "te": {
+      "n_samples": 87,
+      "n_threat": 10,
+      "n_benign": 77,
+      "accuracy": 0.97701,
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "pr_auc": 0.95704,
+      "roc_auc": 0.98506,
+      "fpr": 0.01299,
+      "fnr": 0.1,
+      "tp": 9,
+      "fp": 1,
+      "tn": 76,
+      "fn": 1,
+      "confusion_matrix": [
+        [
+          76,
+          1
+        ],
+        [
+          1,
+          9
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "meajor": {
+    "dataset_name": "MeAJOR Phishing Benchmark",
+    "record_count": 108685,
+    "columns": [
+      "sender",
+      "sender_domain",
+      "receiver",
+      "receiver_domain",
+      "date",
+      "subject",
+      "content_types",
+      "body",
+      "urls",
+      "url_count",
+      "url_length_max",
+      "url_length_avg",
+      "url_subdom_max",
+      "url_subdom_avg",
+      "attachment_count",
+      "has_attachments",
+      "attachment_types",
+      "language",
+      "source",
+      "label"
+    ],
+    "missing_values": {
+      "sender": 0,
+      "sender_domain": 494,
+      "receiver": 0,
+      "receiver_domain": 2371,
+      "date": 0,
+      "subject": 1455,
+      "content_types": 1,
+      "body": 1,
+      "urls": 44633,
+      "url_count": 0,
+      "url_length_max": 0,
+      "url_length_avg": 0,
+      "url_subdom_max": 0,
+      "url_subdom_avg": 0,
+      "attachment_count": 0,
+      "has_attachments": 0,
+      "attachment_types": 107019,
+      "language": 1,
+      "source": 1,
+      "label": 1
+    },
+    "notes": "Large-scale English email phishing corpus (Zenodo/ScienceDirect).",
+    "original_label_column": "label",
+    "label_distribution": {
+      "0.0": 60650,
+      "1.0": 48034,
+      "nan": 1
+    },
+    "language_distribution": "Single language or unannotated",
+    "text_column": "body",
+    "duplicate_text_count": 5166,
+    "duplicate_text_percentage": 4.75,
+    "text_length_stats": {
+      "min_chars": 1,
+      "max_chars": 30574,
+      "mean_chars": 1168.11,
+      "median_chars": 797
+    },
+    "url_field_present": true,
+    "url_positive_records": 64052,
+    "url_presence_percentage": 58.93
+  },
+  "indian_cyber_scam": {
+    "dataset_name": "Indian Cyber Scam Communication",
+    "record_count": 10000,
+    "columns": [
+      "text",
+      "label",
+      "scam_category",
+      "caller_type",
+      "audio_duration",
+      "urgency_level",
+      "contains_blackmail",
+      "language_style"
+    ],
+    "missing_values": {
+      "text": 0,
+      "label": 0,
+      "scam_category": 0,
+      "caller_type": 0,
+      "audio_duration": 0,
+      "urgency_level": 0,
+      "contains_blackmail": 0,
+      "language_style": 0
+    },
+    "notes": "Simulated Hinglish/Hindi phone scam dialogues (KYC, electricity, digital arrest).",
+    "original_label_column": "label",
+    "label_distribution": {
+      "0": 5000,
+      "1": 5000
+    },
+    "language_distribution": "Single language or unannotated",
+    "text_column": "text",
+    "duplicate_text_count": 9257,
+    "duplicate_text_percentage": 92.57,
+    "text_length_stats": {
+      "min_chars": 44,
+      "max_chars": 146,
+      "mean_chars": 80.86,
+      "median_chars": 72
+    },
+    "url_field_present": false,
+    "url_positive_records": 0,
+    "url_presence_percentage": 0.0
+  },
+  "dravidian_sms": {
+    "dataset_name": "Dravidian & Indian SMS Corpus",
+    "record_count": 4567,
+    "columns": [
+      "code",
+      "label",
+      "msg"
+    ],
+    "missing_values": {
+      "code": 1,
+      "label": 0,
+      "msg": 0
+    },
+    "notes": "Real Indian SMS with code-mixed Telugu (codes 3, 4) and Hindi (code 2).",
+    "original_label_column": "label",
+    "label_distribution": {
+      "ham": 3356,
+      "spam": 1211
+    },
+    "language_distribution": {
+      "1.0": 3704,
+      "4.0": 520,
+      "3.0": 176,
+      "2.0": 165,
+      "11.0": 1,
+      "nan": 1
+    },
+    "text_column": "msg",
+    "duplicate_text_count": 742,
+    "duplicate_text_percentage": 16.25,
+    "text_length_stats": {
+      "min_chars": 1,
+      "max_chars": 561,
+      "mean_chars": 140.64,
+      "median_chars": 139
+    },
+    "url_field_present": false,
+    "url_positive_records": 1446,
+    "url_presence_percentage": 31.66
+  },
+  "llm_phishing_benchmark": {
+    "dataset_name": "LLM-Generated Phishing Benchmark",
+    "record_count": 9986,
+    "columns": [
+      "text",
+      "subject",
+      "body",
+      "label",
+      "source",
+      "is_natural",
+      "generation_source",
+      "model",
+      "category"
+    ],
+    "missing_values": {
+      "text": 0,
+      "subject": 47,
+      "body": 0,
+      "label": 0,
+      "source": 0,
+      "is_natural": 0,
+      "generation_source": 0,
+      "model": 5000,
+      "category": 5000
+    },
+    "notes": "Comparative corpus of human vs LLM-generated phishing emails for robustness evaluation.",
+    "original_label_column": "generation_source",
+    "label_distribution": {
+      "human": 5000,
+      "llm_generated": 4986
+    },
+    "language_distribution": "Single language or unannotated",
+    "text_column": "text",
+    "duplicate_text_count": 0,
+    "duplicate_text_percentage": 0.0,
+    "text_length_stats": {
+      "min_chars": 121,
+      "max_chars": 7522,
+      "mean_chars": 1222.83,
+      "median_chars": 1256
+    },
+    "url_field_present": false,
+    "url_positive_records": 4994,
+    "url_presence_percentage": 50.01
+  }
+}

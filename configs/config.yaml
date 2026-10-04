@@ -1,0 +1,38 @@
+# ScamShield Project Master Configuration
+project:
+  name: "ScamShield"
+  version: "1.0.0"
+  random_seed: 42
+
+paths:
+  raw_data_dir: "data/raw"
+  interim_data_dir: "data/interim"
+  processed_data_dir: "data/processed"
+  gold_data_dir: "data/gold"
+  models_dir: "models"
+  reports_dir: "reports"
+  experiments_dir: "experiments"
+  manifest_path: "data/dataset_manifest.csv"
+  experiment_log_path: "experiment_log.csv"
+
+splits:
+  train_ratio: 0.70
+  validation_ratio: 0.15
+  test_ratio: 0.15
+  stratify: true
+  random_seed: 42
+
+models:
+  m1:
+    name: "M1_Text_Baseline"
+    features: "text_tfidf"
+    classifiers: ["naive_bayes", "logistic_regression", "linear_svm"]
+  m2:
+    name: "M2_Text_URL"
+    features: "text_tfidf + url_features"
+  m3:
+    name: "M3_Text_Intent"
+    features: "text_tfidf + intent_features"
+  m4:
+    name: "M4_Full_Multimodal"
+    features: "text_tfidf + url_features + intent_features"

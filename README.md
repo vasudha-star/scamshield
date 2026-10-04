@@ -1,78 +1,118 @@
-# SCAMSHIELD
+# ScamShield: Explainable Multimodal AI for Phishing and Digital Scam Detection
 
-Explainable Multimodal AI for Phishing and Digital Scam Detection
-(Text + URL/Structural + Intent Analysis), built on a Big Data (Spark) pipeline.
+> **Research Question:** Does combining textual, URL/structural, and intent-based evidence improve phishing and digital scam detection compared with conventional text-only classification?
 
-## Recommended environment
+---
 
-- **PySpark local mode** (`local[*]`) — no cluster needed for 100K–500K record scale. Runs on
-  a laptop or in Google Colab identically via the same code.
-- **Google Colab** (free/Pro tier) for shared GPU access when training XLM‑R — everyone on the
-  team can run the same notebooks without individual GPU setups.
-- **GitHub** as the single source of truth for code + `data/manifest.csv` (raw data itself is
-  git-ignored — too large; keep it in Google Drive or a shared folder, referenced by manifest).
-- **Local machine** for day-to-day dev of Spark jobs and Streamlit dashboard (fast iteration),
-  pushing to Colab only for GPU model training (XLM‑R/MuRIL).
+## 1. Project Overview
 
-This avoids cloud costs entirely until/unless you outgrow it (Section 27 of the blueprint —
-B2B/API stage is the point to reconsider AWS/GCP).
+**ScamShield** is a research-oriented, explainable multimodal detection system engineered to detect phishing emails, scam SMS, fraudulent instant messages, and social engineering communications.
 
-## Team split (from blueprint Section 25) → repo ownership
+The architecture processes and fuses three distinct streams of evidence:
+1. **Text Stream:** TF-IDF n-grams (and downstream XLM-RoBERTa embeddings) capturing semantic and vocabulary indicators.
+2. **URL / Structural Stream:** Offline lexical and structural features (character distributions, path entropy, domain/subdomain depth, token anomalies). Malicious links are never contacted.
+3. **Intent / Social Engineering Stream:** Quantified linguistic intent cues (urgency, account threats, OTP/credential requests, authority impersonation, financial pressure).
 
-| Person | Workstream | Owns |
-|---|---|---|
-| A | Data Engineering | `src/ingestion/`, `data/manifest.csv`, Spark jobs |
-| B | Text Analytics | `src/features/text_features.py`, EDA notebooks |
-| C | URL/Structural + Modeling | `src/features/url_features.py`, `src/models/` |
-| D | Explainability & Evaluation | `src/models/explain.py`, `src/dashboard/` |
+### Core Ablation Protocol
+To empirically measure the incremental contribution of each evidence modality, ScamShield benchmarks four controlled model variations across a shared, leakage-free split:
+* **M1:** Text-only Baseline (TF-IDF + Naive Bayes / Logistic Regression / Linear SVM)
+* **M2:** Text + URL Features
+* **M3:** Text + Intent Features
+* **M4:** Full ScamShield (Text + URL + Intent Multimodal Fusion)
 
-With 2-4 people, double up: e.g. 2 people → {Data+Text} and {URL+Modeling+Explain}.
+---
 
-## Setup
+## 2. Directory Hierarchy
 
+```text
+SCAMSHIELD/
+│
+├── data/
+│   ├── raw/
+│   │   ├── meajor/                # Large-scale email phishing corpus
+│   │   ├── curated_phishing/      # External curated benchmark phishing
+│   │   ├── indian_scam/           # Indian Cyber Scam Communication (Hindi/English/Hinglish)
+│   │   ├── dravidian_sms/         # Dravidian SMS & Telugu code-mixed dataset
+│   │   └── llm_phishing/          # Human-written vs LLM-generated phishing benchmark
+│   ├── interim/                   # Standardized intermediate Parquet partitions
+│   ├── processed/                 # Deduplicated, normalized dataset (cleaned.parquet)
+│   └── gold/                      # Fixed evaluation test beds (hard negatives, unseen patterns)
+│
+├── configs/
+│   └── config.yaml                # Master configuration (paths, seeds, ablation specs)
+│
+├── notebooks/                     # Exploratory Data Analysis & experimentation
+│
+├── src/
+│   ├── data/                      # Dataset ingestion and manifest management
+│   ├── preprocessing/             # Unicode, PII masking, exact/near deduplication
+│   ├── features/
+│   │   ├── text/                  # TF-IDF vectorization and vocabulary pipelines
+│   │   ├── url/                   # Offline URL lexical and structural extractors
+│   │   └── intent/                # Social engineering and intent lexicons/detectors
+│   ├── models/                    # M1-M4 ablation models, XLM-R, calibration
+│   ├── evaluation/                # Metrics (PR-AUC, ROC-AUC, FPR/FNR, Confusion Matrices)
+│   ├── explainability/            # SHAP, feature importances, local evidence generation
+│   └── utils/
+│       └── logger.py              # Centralized logging utility
+│
+├── experiments/
+│   ├── M1_text/                   # M1 model weights, predictions, metrics
+│   ├── M2_text_url/               # M2 model weights, predictions, metrics
+│   ├── M3_text_intent/            # M3 model weights, predictions, metrics
+│   └── M4_full/                   # M4 model weights, predictions, metrics
+│
+├── models/                        # Serialized production weights & scalers
+├── reports/                       # Generated audit reports, logs, and evaluation charts
+├── dashboard/                     # Multi-page Streamlit analytical dashboard
+├── api/                           # FastAPI inference microservice
+├── tests/                         # Unit tests and environment verification
+│   └── test_environment.py
+│
+├── requirements.txt               # Pinned dependencies
+├── experiment_log.csv             # Central immutable experiment tracking log
+└── README.md
+```
+
+---
+
+## 3. Environment & Prerequisites
+
+1. **Python:** Version 3.10 or 3.11 recommended.
+2. **Java Runtime (JRE/JDK):** Version 11 or 17 LTS (required for PySpark distributed processing).
+   - Verify with: `java -version`
+
+---
+
+## 4. Setup Instructions
+
+### Step 1: Create and Activate Virtual Environment
 ```bash
+# Windows
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+.venv\Scripts\activate
+
+# Linux / macOS
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### Step 2: Install Dependencies
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Java 11/17 is required for PySpark — verify with `java -version`.
-
-## Repo layout
-
-```
-config/           dataset registry, canonical schema, seeds
-data/
-  raw/            untouched downloads (git-ignored)
-  interim/        Parquet after Spark standardization
-  processed/      gold feature-engineered dataset (versioned)
-  manifest.csv    every dataset: source, URL/DOI, license, retrieval date, record count
-src/
-  ingestion/      download + Spark ingestion/cleaning/dedup
-  features/       text (TF-IDF/n-gram), URL/structural, intent/persuasion features
-  models/         M1-M4 ablation models, XLM-R, explainability (SHAP)
-  dashboard/      Streamlit analytics dashboard
-notebooks/        EDA, experiments (not the source of truth — promote logic into src/)
-docs/             dataset manifest notes, experiment logs
-```
-
-## Week-by-week (from blueprint Section 24) — current phase
-
-- [x] Weeks 1-2: literature review / research questions (this blueprint)
-- [ ] **Week 3 (start here)**: download datasets, build manifest, raw data lake, canonical schema
-- [ ] Week 4: Spark ingestion, cleaning, dedup, language handling
-- [ ] Week 5: EDA + dashboard v1
-- [ ] Week 6: TF-IDF + NB/LR/SVM/RF baselines (M1)
-- [ ] Week 7: URL features + M2
-- [ ] Week 8: Intent features + M4 (full model)
-- [ ] Week 9: XLM-R multilingual + per-language eval
-- [ ] Week 10: Telugu learning curve + translation augmentation
-- [ ] Week 11: robustness (paraphrase/LLM-generated) + explainability
-- [ ] Week 12: final dashboard, error analysis, paper, demo, viva prep
-
-## Run ingestion (Week 3-4 scaffold)
-
+### Step 3: Run Environment Verification
 ```bash
-python src/ingestion/download_datasets.py --dataset all
-python src/ingestion/spark_pipeline.py --input data/raw --output data/interim
+python tests/test_environment.py
 ```
+
+---
+
+## 5. Experiment Tracking & Provenance Rules
+
+1. **No Fake Results:** Every metric recorded in `experiment_log.csv` or `reports/` must be generated by an actual reproducible run.
+2. **Leakage Prevention:** Exact and near-duplicate deduplication is executed strictly **prior** to train/validation/test partitioning.
+3. **Controlled Comparison:** The identical train, validation, and test splits generated in Phase 5 are locked for M1, M2, M3, and M4.
+4. **Offline URL Safety:** URL extraction and feature computation are strictly offline. Malicious links are never resolved or fetched over HTTP.

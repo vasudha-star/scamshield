@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-04T02:45:12.082420",
+    "corpora": [
+      "dravidian_sms",
+      "indian_scam",
+      "llm_phishing",
+      "meajor"
+    ]
+  },
+  "source_wise_evaluation": {
+    "dravidian_sms": {
+      "samples": 573,
+      "threat_count": 144,
+      "benign_count": 429,
+      "m1_text": {
+        "f1": 0.86869,
+        "precision": 0.84314,
+        "recall": 0.89583,
+        "fpr": 0.05594,
+        "fnr": 0.10417,
+        "support": 573,
+        "positives": 144,
+        "negatives": 429
+      },
+      "m2_text_url": {
+        "f1": 0.85517,
+        "precision": 0.84932,
+        "recall": 0.86111,
+        "fpr": 0.05128,
+        "fnr": 0.13889,
+        "support": 573,
+        "positives": 144,
+        "negatives": 429
+      },
+      "m3_text_intent": {
+        "f1": 0.87248,
+        "precision": 0.84416,
+        "recall": 0.90278,
+        "fpr": 0.05594,
+        "fnr": 0.09722,
+        "support": 573,
+        "positives": 144,
+        "negatives": 429
+      },
+      "m4_full": {
+        "f1": 0.85911,
+        "precision": 0.85034,
+        "recall": 0.86806,
+        "fpr": 0.05128,
+        "fnr": 0.13194,
+        "support": 573,
+        "positives": 144,
+        "negatives": 429
+      }
+    },
+    "indian_scam": {
+      "samples": 112,
+      "threat_count": 95,
+      "benign_count": 17,
+      "m1_text": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "support": 112,
+        "positives": 95,
+        "negatives": 17
+      },
+      "m2_text_url": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "support": 112,
+        "positives": 95,
+        "negatives": 17
+      },
+      "m3_text_intent": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "support": 112,
+        "positives": 95,
+        "negatives": 17
+      },
+      "m4_full": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "fpr": 0.0,
+        "fnr": 0.0,
+        "support": 112,
+        "positives": 95,
+        "negatives": 17
+      }
+    },
+    "llm_phishing": {
+      "samples": 1498,
+      "threat_count": 1498,
+      "benign_count": 0,
+      "m1_text": {
+        "f1": 0.99294,
+        "precision": 1.0,
+        "recall": 0.98598,
+        "fpr": 0.0,
+        "fnr": 0.01402,
+        "support": 1498,
+        "positives": 1498,
+        "negatives": 0
+      },
+      "m2_text_url": {
+        "f1": 0.99328,
+        "precision": 1.0,
+        "recall": 0.98665,
+        "fpr": 0.0,
+        "fnr": 0.01335,
+        "support": 1498,
+        "positives": 1498,
+        "negatives": 0
+      },
+      "m3_text_intent": {
+        "f1": 0.99294,
+        "precision": 1.0,
+        "recall": 0.98598,
+        "fpr": 0.0,
+        "fnr": 0.01402,
+        "support": 1498,
+        "positives": 1498,
+        "negatives": 0
+      },
+      "m4_full": {
+        "f1": 0.99328,
+        "precision": 1.0,
+        "recall": 0.98665,
+        "fpr": 0.0,
+        "fnr": 0.01335,
+        "support": 1498,
+        "positives": 1498,
+        "negatives": 0
+      }
+    },
+    "meajor": {
+      "samples": 15718,
+      "threat_count": 7019,
+      "benign_count": 8699,
+      "m1_text": {
+        "f1": 0.97387,
+        "precision": 0.9707,
+        "recall": 0.97706,
+        "fpr": 0.0238,
+        "fnr": 0.02294,
+        "support": 15718,
+        "positives": 7019,
+        "negatives": 8699
+      },
+      "m2_text_url": {
+        "f1": 0.9735,
+        "precision": 0.96842,
+        "recall": 0.97863,
+        "fpr": 0.02575,
+        "fnr": 0.02137,
+        "support": 15718,
+        "positives": 7019,
+        "negatives": 8699
+      },
+      "m3_text_intent": {
+        "f1": 0.97464,
+        "precision": 0.97208,
+        "recall": 0.9772,
+        "fpr": 0.02265,
+        "fnr": 0.0228,
+        "support": 15718,
+        "positives": 7019,
+        "negatives": 8699
+      },
+      "m4_full": {
+        "f1": 0.97336,
+        "precision": 0.96828,
+        "recall": 0.97849,
+        "fpr": 0.02587,
+        "fnr": 0.02151,
+        "support": 15718,
+        "positives": 7019,
+        "negatives": 8699
+      }
+    }
+  },
+  "intent_dimension_ranking": {
+    "intent_scarcity": {
+      "dimension": "Scarcity",
+      "correlation_with_threat": 0.2116,
+      "mean_threat": 0.5182,
+      "mean_benign": 0.0897,
+      "coercion_lift": 0.4284
+    },
+    "intent_action_request": {
+      "dimension": "Action_Request",
+      "correlation_with_threat": 0.1773,
+      "mean_threat": 0.6542,
+      "mean_benign": 0.2987,
+      "coercion_lift": 0.3555
+    },
+    "intent_credentials": {
+      "dimension": "Credentials",
+      "correlation_with_threat": 0.0821,
+      "mean_threat": 0.2392,
+      "mean_benign": 0.079,
+      "coercion_lift": 0.1602
+    },
+    "intent_financial": {
+      "dimension": "Financial",
+      "correlation_with_threat": 0.0737,
+      "mean_threat": 0.2464,
+      "mean_benign": 0.1079,
+      "coercion_lift": 0.1385
+    },
+    "intent_verification": {
+      "dimension": "Verification",
+      "correlation_with_threat": 0.0438,
+      "mean_threat": 0.2747,
+      "mean_benign": 0.1844,
+      "coercion_lift": 0.0903
+    },
+    "intent_fear": {
+      "dimension": "Fear",
+      "correlation_with_threat": 0.0437,
+      "mean_threat": 0.2743,
+      "mean_benign": 0.1883,
+      "coercion_lift": 0.086
+    },
+    "intent_urgency": {
+      "dimension": "Urgency",
+      "correlation_with_threat": 0.0393,
+      "mean_threat": 0.1778,
+      "mean_benign": 0.0974,
+      "coercion_lift": 0.0804
+    },
+    "intent_authority": {
+      "dimension": "Authority",
+      "correlation_with_threat": -0.035,
+      "mean_threat": 0.0148,
+      "mean_benign": 0.0811,
+      "coercion_lift": -0.0663
+    },
+    "intent_legal": {
+      "dimension": "Legal",
+      "correlation_with_threat": 0.0324,
+      "mean_threat": 0.1266,
+      "mean_benign": 0.0602,
+      "coercion_lift": 0.0664
+    },
+    "intent_greed": {
+      "dimension": "Greed",
+      "correlation_with_threat": 0.0023,
+      "mean_threat": 0.1507,
+      "mean_benign": 0.1455,
+      "coercion_lift": 0.0052
+    }
+  }
+}

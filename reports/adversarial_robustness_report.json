@@ -1,0 +1,115 @@
+{
+  "Clean Baseline": {
+    "total_samples": 50,
+    "detected_threats": 45,
+    "threat_retention_rate": 90.0,
+    "mean_risk_score": 85.19,
+    "mean_latency_ms": 14.29,
+    "sample_examples": []
+  },
+  "Typo Injection": {
+    "total_samples": 50,
+    "detected_threats": 40,
+    "threat_retention_rate": 80.0,
+    "mean_risk_score": 78.96,
+    "mean_latency_ms": 14.6,
+    "sample_examples": [
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "urgnt NOTICE: CBI and Delhi polce cybercrime cell have issued an arest warent against your...",
+        "detected": false,
+        "risk_score": 21.8
+      },
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "urgnt NOTICE: CBI and Delhi polce cybercrime cell have issued an arest warent against your...",
+        "detected": false,
+        "risk_score": 36.9
+      }
+    ]
+  },
+  "Spacing Segmentation": {
+    "total_samples": 50,
+    "detected_threats": 40,
+    "threat_retention_rate": 80.0,
+    "mean_risk_score": 79.17,
+    "mean_latency_ms": 13.15,
+    "sample_examples": [
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "u r g e n t NOTICE: CBI and Delhi p o l i c e cybercrime cell have issued an a r r e s t w...",
+        "detected": false,
+        "risk_score": 18.0
+      },
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "u r g e n t NOTICE: CBI and Delhi p o l i c e cybercrime cell have issued an a r r e s t w...",
+        "detected": false,
+        "risk_score": 34.8
+      }
+    ]
+  },
+  "Unicode Homoglyphs": {
+    "total_samples": 50,
+    "detected_threats": 41,
+    "threat_retention_rate": 82.0,
+    "mean_risk_score": 80.12,
+    "mean_latency_ms": 15.41,
+    "sample_examples": [
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "URGENT NOTICE: CBI and Delhi P\u043el\u0456\u0441\u0435 cybercrime cell have issued an \u0430rr\u0435st w\u0430rr\u0430nt against ...",
+        "detected": false,
+        "risk_score": 28.4
+      },
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "URGENT NOTICE: CBI and Delhi P\u043el\u0456\u0441\u0435 cybercrime cell have issued an \u0430rr\u0435st w\u0430rr\u0430nt against ...",
+        "detected": false,
+        "risk_score": 49.5
+      }
+    ]
+  },
+  "Code-Mixing (Hinglish)": {
+    "total_samples": 50,
+    "detected_threats": 45,
+    "threat_retention_rate": 90.0,
+    "mean_risk_score": 86.72,
+    "mean_latency_ms": 15.66,
+    "sample_examples": [
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have aapke Aadhaar ke against arrest w...",
+        "detected": true,
+        "risk_score": 92.7
+      },
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have aapke Aadhaar ke against arrest w...",
+        "detected": true,
+        "risk_score": 93.4
+      }
+    ]
+  },
+  "Paraphrastic Rewriting": {
+    "total_samples": 50,
+    "detected_threats": 44,
+    "threat_retention_rate": 88.0,
+    "mean_risk_score": 81.89,
+    "mean_latency_ms": 13.64,
+    "sample_examples": [
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "detected": true,
+        "risk_score": 60.6
+      },
+      {
+        "original": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "perturbed": "URGENT NOTICE: CBI and Delhi Police cybercrime cell have issued an arrest warrant against ...",
+        "detected": true,
+        "risk_score": 77.9
+      }
+    ]
+  }
+}

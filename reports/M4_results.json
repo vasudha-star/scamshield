@@ -1,0 +1,67 @@
+{
+  "model_id": "M4_Full_ScamShield",
+  "feature_dimensions": 15028,
+  "training_time_seconds": 142.74,
+  "master_ablation_metrics": [
+    {
+      "Model": "M1_Text_Only",
+      "Features": "Text TF-IDF (15,000)",
+      "precision": 0.97372,
+      "recall": 0.9775,
+      "f1": 0.97561,
+      "roc_auc": 0.996,
+      "pr_auc": 0.99561,
+      "fpr": 0.02526,
+      "fnr": 0.0225,
+      "tp": 8559,
+      "fp": 231,
+      "tn": 8914,
+      "fn": 197
+    },
+    {
+      "Model": "M2_Text_URL",
+      "Features": "Text (15,000) + URL (18)",
+      "precision": 0.97208,
+      "recall": 0.9783,
+      "f1": 0.97518,
+      "roc_auc": 0.99588,
+      "pr_auc": 0.99545,
+      "fpr": 0.0269,
+      "fnr": 0.0217,
+      "tp": 8566,
+      "fp": 246,
+      "tn": 8899,
+      "fn": 190
+    },
+    {
+      "Model": "M3_Text_Intent",
+      "Features": "Text (15,000) + Intent (10)",
+      "precision": 0.97483,
+      "recall": 0.97773,
+      "f1": 0.97628,
+      "roc_auc": 0.99603,
+      "pr_auc": 0.99568,
+      "fpr": 0.02417,
+      "fnr": 0.02227,
+      "tp": 8561,
+      "fp": 221,
+      "tn": 8924,
+      "fn": 195
+    },
+    {
+      "Model": "M4_Full_ScamShield",
+      "Features": "Text (15,000) + URL (18) + Intent (10)",
+      "precision": 0.97197,
+      "recall": 0.9783,
+      "f1": 0.97513,
+      "roc_auc": 0.99586,
+      "pr_auc": 0.99545,
+      "fpr": 0.02701,
+      "fnr": 0.0217,
+      "tp": 8566,
+      "fp": 247,
+      "tn": 8898,
+      "fn": 190
+    }
+  ]
+}

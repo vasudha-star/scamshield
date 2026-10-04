@@ -1,0 +1,50 @@
+{
+  "model_name": "MultinomialLogisticRegression",
+  "classes": [
+    "digital_arrest",
+    "extortion_blackmail",
+    "impersonation_scam",
+    "kyc_banking_identity",
+    "legitimate",
+    "lottery_reward"
+  ],
+  "taxonomy_map": {
+    "police_digital_arrest": "digital_arrest",
+    "police_blackmail": "extortion_blackmail",
+    "bank_kyc": "kyc_banking_identity",
+    "aadhaar": "kyc_banking_identity",
+    "lottery": "lottery_reward",
+    "amazon": "impersonation_scam",
+    "relative": "impersonation_scam",
+    "legitimate": "legitimate"
+  },
+  "taxonomy_descriptions": {
+    "digital_arrest": "Digital Arrest / CBI / Law Enforcement Impersonation Extortion",
+    "extortion_blackmail": "Police Blackmail / Video Leaks / Defamation Threats",
+    "kyc_banking_identity": "Bank KYC / Aadhaar / OTP / Account Suspension Fraud",
+    "lottery_reward": "Lottery / Prize / Cashback / Jackpot Scam",
+    "impersonation_scam": "Delivery Parcel / Relative in Distress Impersonation",
+    "legitimate": "Normal Personal & Professional Dialogue"
+  },
+  "train_samples": 520,
+  "val_samples": 111,
+  "test_samples": 112,
+  "features": "sublinear_tfidf_ngram_1_2",
+  "vocabulary_size": 740,
+  "test_metrics": {
+    "accuracy": 0.9018,
+    "macro_precision": 0.725,
+    "macro_recall": 0.7306,
+    "macro_f1": 0.7069,
+    "weighted_f1": 0.8971
+  },
+  "per_class_f1": {
+    "digital_arrest": 1.0,
+    "extortion_blackmail": 1.0,
+    "impersonation_scam": 0.4,
+    "kyc_banking_identity": 0.5556,
+    "legitimate": 1.0,
+    "lottery_reward": 0.2857
+  },
+  "timestamp": "2026-10-03T19:48:35.746817+00:00"
+}

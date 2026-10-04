@@ -1,0 +1,165 @@
+{
+  "error_summary": {
+    "total_test_samples": 17901,
+    "total_benign": 9145,
+    "total_threats": 8756,
+    "false_positives_count": 247,
+    "false_negatives_count": 190,
+    "fpr": 0.02701,
+    "fnr": 0.0217,
+    "fp_cause_distribution": {
+      "Lexical Overlap with Social Engineering Triggers": 148,
+      "Marketing Promotion with Reward Lure": 46,
+      "Security Advisory / Account Notice": 33,
+      "Transactional Receipt / Tax Intimation": 13,
+      "Extremely Short Message (Sparsity)": 6,
+      "Legitimate 2FA / OTP Verification": 1
+    },
+    "fn_cause_distribution": {
+      "Conversational Grooming (Delayed Payload)": 123,
+      "No URL Present (Phone-based or Callback Scam)": 44,
+      "Indic Script Subword OOV": 19,
+      "Minimal Text / Link-Only Phishing": 2,
+      "Subtle Coercion / Evasive Vocabulary": 2
+    }
+  },
+  "false_positive_examples": [
+    {
+      "message_id": "c119e569-6833-5608-a078-ed86ceeddab2",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.9941,
+      "root_cause": "Transactional Receipt / Tax Intimation",
+      "text_snippet": "Authenticated sender is [EMAIL_ADDRESS]\nSubject: Thursday\nMime-Version: 1.0\nContent-Type: text/plain; charset=\"us-ascii\"\nContent-Transfer-En..."
+    },
+    {
+      "message_id": "5ecbf8d7-14d0-510d-ad1c-ed66210e3058",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.9927,
+      "root_cause": "Security Advisory / Account Notice",
+      "text_snippet": "New Coastal Single-Family Homes One Block From the Ocean\n\nThe Undiscovered Coastal Enclave in Historic [ADDRESS]\n\n[ADDRESS] on [ADDRESS]<|EM..."
+    },
+    {
+      "message_id": "255cbcda-1209-5962-afea-c289efa7f896",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.992,
+      "root_cause": "Lexical Overlap with Social Engineering Triggers",
+      "text_snippet": "Gana un MP3 de 1 Giga \n\nSi no ves este newsletter, pincha aqu&iacute; o pega esta ruta en tu navegador\n<|URL|><|EMAIL_SEPARATOR|>Bienvenido ..."
+    },
+    {
+      "message_id": "dedb06f2-543f-59c3-91e1-ed89b8f4e718",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.9911,
+      "root_cause": "Lexical Overlap with Social Engineering Triggers",
+      "text_snippet": "Proposition\n\nHEALTH: A NEW NATURAL HELP\n \nTo the product Manager\n\nThe customers demand for natural products is increasing steadily, and Arom..."
+    },
+    {
+      "message_id": "984765b9-4a16-5df7-999a-63b602a66272",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.9906,
+      "root_cause": "Lexical Overlap with Social Engineering Triggers",
+      "text_snippet": "Hello my dear [NAME]\n\nGreetings \u0446<|EMOJI|>\u0446<|EMOJI|>\u0446<|EMOJI|>\u0446<|EMOJI|>\u0446<|EMOJI|> and future mother, how at you an \naffair? I write the let..."
+    },
+    {
+      "message_id": "d3dc5516-1503-509a-b02a-378de556de3e",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.9893,
+      "root_cause": "Marketing Promotion with Reward Lure",
+      "text_snippet": "[ORGANIZATION] Owners' Rewards\n\nDear [NAME],\nAs a valued member of the [ORGANIZATION] family, [ORGANIZATION] is pleased to introduce the [OR..."
+    },
+    {
+      "message_id": "033dbe20-7082-55b0-9bde-09418825f86b",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.9877,
+      "root_cause": "Marketing Promotion with Reward Lure",
+      "text_snippet": "Deck the Halls with Beauty\n\nDear [NAME],\nHome for the Holidays takes on special meaning this year. Transform your home into a holiday winter..."
+    },
+    {
+      "message_id": "742876b7-ffde-55ca-8b5e-5b0036800ed3",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.9776,
+      "root_cause": "Lexical Overlap with Social Engineering Triggers",
+      "text_snippet": "hiiiiiiiii\n\nhello [NAME] HOW ARE YOU MY BAND IS BACK AND IT IS\nAWSOME WOW\nI HAVE A NEW TRICK ON THE GUITAR,I ALLWAYS LIKE TO\nMAKE A SOLO DOU..."
+    }
+  ],
+  "false_negative_examples": [
+    {
+      "message_id": "2805ed7e-1298-525a-bf52-c67343da0805",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.0064,
+      "root_cause": "Conversational Grooming (Delayed Payload)",
+      "text_snippet": "FWD: Requested documents\n\nHi Again,\nI have preperated the following documents that you asked me for.\nYou can see them at my page [URL] .\nPle..."
+    },
+    {
+      "message_id": "8d41d503-43e1-5f2d-97f8-a6b53e22bae8",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.0163,
+      "root_cause": "Minimal Text / Link-Only Phishing",
+      "text_snippet": "test"
+    },
+    {
+      "message_id": "2992fd4a-3e21-5b39-84f0-7087a8e792c1",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.0218,
+      "root_cause": "Conversational Grooming (Delayed Payload)",
+      "text_snippet": "We need your help!\n\nHowdy!\n\nWe need your help! Earlier this week, a letter was sent to you asking you to renew your support for [ORGANIZATIO..."
+    },
+    {
+      "message_id": "01f74fbb-7c1c-5070-97da-cbe568419bab",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.042,
+      "root_cause": "Conversational Grooming (Delayed Payload)",
+      "text_snippet": "50-60% off [ORGANIZATION] list\n\n50-60% off [ORGANIZATION] list\nHello [NAME]!!\nWish you could get more than 40% off list pricing? Now you can..."
+    },
+    {
+      "message_id": "d01a09ba-b892-5dcb-9d44-a74acc42f2a8",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.0486,
+      "root_cause": "No URL Present (Phone-based or Callback Scam)",
+      "text_snippet": "\u041fPO\u0424ECC\u0418OHA\u041bbHA\u042f E-mail PACCbl\u041bKA\n\n\u0413\u040f\u0413\u0452\u0413\u040b\u0413''\u0413...\u0413'\u0413'\u0413\u20ac\u0413\u040b\u0413\u040c\u0413\u0402\u0413<\u0413\u045a\u0413\u040c\u0413\u0402\u0413\u045f E-mail \u0413\u0452\u0413\u0402\u0413'\u0413'\u0413>\u0413<\u0413\u0409\u0413\u0402 \n \u0413\u0452\u0413...\u0413\u0409\u0413<\u0413\u0402\u0413\u040a\u0413\u0402, \n \u0413\u045c\u0413''\u0413''\u0413...\u0413\u0409\u0413' \u0413\u0409\u0413\u040b\u0413'..."
+    },
+    {
+      "message_id": "9389bb6d-4866-5947-b8a5-b9151321b908",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.0546,
+      "root_cause": "No URL Present (Phone-based or Callback Scam)",
+      "text_snippet": "Hey!\n\nin [DATE] in [DATE] in [DATE] some advice aboutin [DATE] [PRODUCT]"
+    },
+    {
+      "message_id": "26c526af-5a6d-52c5-8ef3-50651923fb2d",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.057,
+      "root_cause": "Conversational Grooming (Delayed Payload)",
+      "text_snippet": "Defense wins championships. Can you?\n\nInvitations to the NFL playoff party weren't mailed out until the final game, but now 12 teams are foc..."
+    },
+    {
+      "message_id": "e639a0a8-c2fd-54dc-a098-d43e23811349",
+      "source": "meajor",
+      "language": "en",
+      "predicted_probability": 0.0727,
+      "root_cause": "Conversational Grooming (Delayed Payload)",
+      "text_snippet": "Go shopping with someone else's money\n\n[REFERENCE_NUMBER]// To download the Sinhala fonts used in this article, please see the/[[[ORGANIZATI..."
+    }
+  ],
+  "category_discrepancy_breakdown": {
+    "overall_accuracy": 0.9018,
+    "macro_f1": 0.7069,
+    "weighted_f1": 0.8954,
+    "discrepancy_explanation": "The gap between 90.18% overall accuracy and 0.7069 Macro-F1 is driven by severe class imbalance across Indian scam categories. High-prevalence classes (Digital Arrest and Extortion) achieve 100% precision and recall, dominating micro-accuracy. Conversely, rare classes (e.g., Job/Lottery Fraud and Delivery Impersonation with support N < 20 in test sets) experience higher relative sensitivity to individual errors, lowering the unweighted macro-average.",
+    "per_class_breakdown": {}
+  }
+}

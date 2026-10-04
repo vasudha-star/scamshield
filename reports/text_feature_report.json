@@ -1,0 +1,279 @@
+{
+  "vocabulary_size": 15000,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "max_features": 15000,
+  "sublinear_tf": true,
+  "fit_time_seconds": 39.53,
+  "total_pipeline_time_seconds": 59.02,
+  "matrices": {
+    "train_shape": [
+      83537,
+      15000
+    ],
+    "train_non_zeros": 5580731,
+    "train_sparsity_pct": 99.5546,
+    "val_shape": [
+      17901,
+      15000
+    ],
+    "val_non_zeros": 1199035,
+    "test_shape": [
+      17901,
+      15000
+    ],
+    "test_non_zeros": 1190647
+  },
+  "top_features_by_class": {
+    "benign": [
+      {
+        "term": "organization",
+        "mean_tfidf": 0.04152
+      },
+      {
+        "term": "date",
+        "mean_tfidf": 0.03256
+      },
+      {
+        "term": "product",
+        "mean_tfidf": 0.02291
+      },
+      {
+        "term": "url",
+        "mean_tfidf": 0.02288
+      },
+      {
+        "term": "time",
+        "mean_tfidf": 0.02185
+      },
+      {
+        "term": "thanks",
+        "mean_tfidf": 0.02048
+      },
+      {
+        "term": "email",
+        "mean_tfidf": 0.01992
+      },
+      {
+        "term": "phone_number",
+        "mean_tfidf": 0.01976
+      },
+      {
+        "term": "reference_number",
+        "mean_tfidf": 0.01895
+      },
+      {
+        "term": "email_address",
+        "mean_tfidf": 0.01754
+      },
+      {
+        "term": "address",
+        "mean_tfidf": 0.01719
+      },
+      {
+        "term": "list",
+        "mean_tfidf": 0.01682
+      },
+      {
+        "term": "file",
+        "mean_tfidf": 0.01654
+      },
+      {
+        "term": "know",
+        "mean_tfidf": 0.01586
+      },
+      {
+        "term": "use",
+        "mean_tfidf": 0.01396
+      }
+    ],
+    "phishing": [
+      {
+        "term": "product",
+        "mean_tfidf": 0.03187
+      },
+      {
+        "term": "url",
+        "mean_tfidf": 0.02711
+      },
+      {
+        "term": "financial_info",
+        "mean_tfidf": 0.02705
+      },
+      {
+        "term": "simbol",
+        "mean_tfidf": 0.02647
+      },
+      {
+        "term": "simbol simbol",
+        "mean_tfidf": 0.02416
+      },
+      {
+        "term": "organization",
+        "mean_tfidf": 0.02263
+      },
+      {
+        "term": "emoji",
+        "mean_tfidf": 0.0194
+      },
+      {
+        "term": "product product",
+        "mean_tfidf": 0.01638
+      },
+      {
+        "term": "address",
+        "mean_tfidf": 0.01612
+      },
+      {
+        "term": "email_separator",
+        "mean_tfidf": 0.0159
+      },
+      {
+        "term": "emoji emoji",
+        "mean_tfidf": 0.01388
+      },
+      {
+        "term": "symbol",
+        "mean_tfidf": 0.01313
+      },
+      {
+        "term": "price",
+        "mean_tfidf": 0.01255
+      },
+      {
+        "term": "financial_info product",
+        "mean_tfidf": 0.01226
+      },
+      {
+        "term": "account",
+        "mean_tfidf": 0.01181
+      }
+    ],
+    "scam": [
+      {
+        "term": "hai",
+        "mean_tfidf": 0.24852
+      },
+      {
+        "term": "aapke",
+        "mean_tfidf": 0.17089
+      },
+      {
+        "term": "se",
+        "mean_tfidf": 0.16926
+      },
+      {
+        "term": "raha",
+        "mean_tfidf": 0.169
+      },
+      {
+        "term": "raha hoon",
+        "mean_tfidf": 0.14548
+      },
+      {
+        "term": "bol raha",
+        "mean_tfidf": 0.14548
+      },
+      {
+        "term": "hoon",
+        "mean_tfidf": 0.14417
+      },
+      {
+        "term": "bol",
+        "mean_tfidf": 0.14351
+      },
+      {
+        "term": "se bol",
+        "mean_tfidf": 0.12288
+      },
+      {
+        "term": "hoon aapke",
+        "mean_tfidf": 0.07454
+      },
+      {
+        "term": "aapka",
+        "mean_tfidf": 0.07327
+      },
+      {
+        "term": "cyber",
+        "mean_tfidf": 0.07056
+      },
+      {
+        "term": "investigation",
+        "mean_tfidf": 0.061
+      },
+      {
+        "term": "hain",
+        "mean_tfidf": 0.05927
+      },
+      {
+        "term": "ji",
+        "mean_tfidf": 0.05757
+      }
+    ],
+    "spam": [
+      {
+        "term": "rs",
+        "mean_tfidf": 0.1281
+      },
+      {
+        "term": "goo gl",
+        "mean_tfidf": 0.05932
+      },
+      {
+        "term": "goo",
+        "mean_tfidf": 0.05893
+      },
+      {
+        "term": "gl",
+        "mean_tfidf": 0.05729
+      },
+      {
+        "term": "https",
+        "mean_tfidf": 0.05634
+      },
+      {
+        "term": "http",
+        "mean_tfidf": 0.05387
+      },
+      {
+        "term": "com",
+        "mean_tfidf": 0.05008
+      },
+      {
+        "term": "https goo",
+        "mean_tfidf": 0.04632
+      },
+      {
+        "term": "wallet",
+        "mean_tfidf": 0.04422
+      },
+      {
+        "term": "vodafone",
+        "mean_tfidf": 0.04139
+      },
+      {
+        "term": "dial",
+        "mean_tfidf": 0.03625
+      },
+      {
+        "term": "offer",
+        "mean_tfidf": 0.03552
+      },
+      {
+        "term": "jio",
+        "mean_tfidf": 0.03499
+      },
+      {
+        "term": "ly",
+        "mean_tfidf": 0.03378
+      },
+      {
+        "term": "recharge",
+        "mean_tfidf": 0.03253
+      }
+    ]
+  }
+}

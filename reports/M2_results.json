@@ -1,0 +1,71 @@
+{
+  "model_id": "M2_text_url",
+  "model_architecture": "CalibratedLinearSVC",
+  "feature_dimensions": 15018,
+  "fit_time_seconds": 152.34,
+  "validation_metrics": {
+    "precision": 0.97422,
+    "recall": 0.97933,
+    "f1": 0.97677,
+    "roc_auc": 0.99606,
+    "pr_auc": 0.99551,
+    "fpr": 0.02483,
+    "fnr": 0.02067,
+    "tp": 8577,
+    "fp": 227,
+    "tn": 8916,
+    "fn": 181
+  },
+  "test_metrics": {
+    "precision": 0.97208,
+    "recall": 0.9783,
+    "f1": 0.97518,
+    "roc_auc": 0.99588,
+    "pr_auc": 0.99545,
+    "fpr": 0.0269,
+    "fnr": 0.0217,
+    "tp": 8566,
+    "fp": 246,
+    "tn": 8899,
+    "fn": 190
+  },
+  "comparison_with_m1": {
+    "precision": {
+      "m1": 0.97372,
+      "m2": 0.97208,
+      "delta": -0.00164
+    },
+    "recall": {
+      "m1": 0.9775,
+      "m2": 0.9783,
+      "delta": 0.0008
+    },
+    "f1": {
+      "m1": 0.97561,
+      "m2": 0.97518,
+      "delta": -0.00043
+    },
+    "pr_auc": {
+      "m1": 0.99561,
+      "m2": 0.99545,
+      "delta": -0.00016
+    },
+    "roc_auc": {
+      "m1": 0.996,
+      "m2": 0.99588,
+      "delta": -0.00012
+    },
+    "fpr": {
+      "m1": 0.02526,
+      "m2": 0.0269,
+      "delta": 0.00164
+    },
+    "fnr": {
+      "m1": 0.0225,
+      "m2": 0.0217,
+      "delta": -0.0008
+    },
+    "false_negatives_recovered_by_url": 16,
+    "false_positives_resolved_by_url": 3
+  }
+}

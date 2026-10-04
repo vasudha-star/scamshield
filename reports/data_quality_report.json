@@ -1,0 +1,36 @@
+{
+  "raw_total_records": 133238,
+  "clean_deduplicated_records": 119340,
+  "dropped_duplicates_count": 13898,
+  "dropped_duplicates_pct": 10.43,
+  "source_dataset_distribution": {
+    "meajor": 104789,
+    "llm_phishing": 9986,
+    "dravidian_sms": 3822,
+    "indian_scam": 743
+  },
+  "project_label_distribution": {
+    "benign": 60960,
+    "phishing": 56782,
+    "spam": 964,
+    "scam": 633,
+    "unknown": 1
+  },
+  "language_distribution": {
+    "en": 117913,
+    "hinglish": 743,
+    "te": 586,
+    "hi": 98
+  },
+  "channel_distribution": {
+    "email": 114775,
+    "sms": 3822,
+    "transcript": 743
+  },
+  "url_presence_overall_pct": 57.62,
+  "natural_vs_synthetic": {
+    "True": 113611,
+    "False": 5729
+  },
+  "output_file": "data/processed/cleaned.parquet"
+}

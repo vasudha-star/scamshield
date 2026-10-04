@@ -1,0 +1,81 @@
+{
+  "feature_count": 10,
+  "feature_names": [
+    "credential_request",
+    "otp_request",
+    "payment_request",
+    "account_threat",
+    "urgency",
+    "authority_impersonation",
+    "reward_prize",
+    "fear_threat",
+    "call_to_action",
+    "social_engineering_score"
+  ],
+  "execution_time_seconds": 220.38,
+  "train_samples": 83537,
+  "val_samples": 17901,
+  "test_samples": 17901,
+  "feature_comparison_threat_vs_benign": [
+    {
+      "feature": "credential_request",
+      "threat_mean": 0.0122,
+      "benign_mean": 0.0078,
+      "ratio_threat_to_benign": 1.58
+    },
+    {
+      "feature": "otp_request",
+      "threat_mean": 0.0003,
+      "benign_mean": 0.0021,
+      "ratio_threat_to_benign": 0.17
+    },
+    {
+      "feature": "payment_request",
+      "threat_mean": 0.026,
+      "benign_mean": 0.0178,
+      "ratio_threat_to_benign": 1.46
+    },
+    {
+      "feature": "account_threat",
+      "threat_mean": 0.0058,
+      "benign_mean": 0.0051,
+      "ratio_threat_to_benign": 1.12
+    },
+    {
+      "feature": "urgency",
+      "threat_mean": 0.0472,
+      "benign_mean": 0.0079,
+      "ratio_threat_to_benign": 5.95
+    },
+    {
+      "feature": "authority_impersonation",
+      "threat_mean": 0.0218,
+      "benign_mean": 0.0095,
+      "ratio_threat_to_benign": 2.3
+    },
+    {
+      "feature": "reward_prize",
+      "threat_mean": 0.02,
+      "benign_mean": 0.0061,
+      "ratio_threat_to_benign": 3.26
+    },
+    {
+      "feature": "fear_threat",
+      "threat_mean": 0.0034,
+      "benign_mean": 0.0017,
+      "ratio_threat_to_benign": 1.99
+    },
+    {
+      "feature": "call_to_action",
+      "threat_mean": 0.0205,
+      "benign_mean": 0.0145,
+      "ratio_threat_to_benign": 1.42
+    },
+    {
+      "feature": "social_engineering_score",
+      "threat_mean": 0.0804,
+      "benign_mean": 0.0367,
+      "ratio_threat_to_benign": 2.19
+    }
+  ]
+}

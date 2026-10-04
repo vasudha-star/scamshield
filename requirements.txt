@@ -1,15 +1,35 @@
+# ScamShield - Dependencies
+# Python >= 3.10, < 3.12 recommended
+
+# Core Data & Big Data Processing
 pyspark==3.5.1
-pandas==2.2.2
-pyarrow==16.1.0
-scikit-learn==1.5.0
-huggingface_hub==0.24.0
-requests==2.32.3
-tqdm==4.66.4
-langdetect==1.0.9
-tldextract==5.1.2
-transformers==4.42.4
-torch==2.3.1
-shap==0.45.1
-streamlit==1.36.0
-plotly==5.22.0
-pyyaml==6.0.1
+pandas>=2.2.0
+numpy>=1.26.0,<2.0.0
+pyarrow>=15.0.0
+pyyaml>=6.0.1
+requests>=2.31.0
+tqdm>=4.66.0
+
+# Feature Engineering & Classical ML
+scikit-learn>=1.4.0
+tldextract>=5.1.0
+langdetect>=1.0.9
+
+# Visualization & Metrics
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.20.0
+
+# Explainability
+shap>=0.44.0
+
+# Serving & Dashboard
+streamlit>=1.35.0
+fastapi>=0.111.0
+uvicorn>=0.30.0
+
+# Deep Learning (Phase 14+: Multilingual XLM-R)
+torch>=2.2.0
+transformers>=4.40.0
+datasets>=2.19.0
+huggingface_hub>=0.23.0

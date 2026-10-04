@@ -1,0 +1,5 @@
+Split,Model,precision,recall,f1,roc_auc,pr_auc,fpr,fnr,tp,fp,tn,fn,fit_time_seconds
+Validation,MultinomialNB,0.96949,0.92521,0.94683,0.98953,0.99001,0.02789,0.07479,8103,255,8888,655,0.06
+Validation,LogisticRegression,0.9723,0.96997,0.97113,0.99632,0.99592,0.02647,0.03003,8495,242,8901,263,0.86
+Validation,CalibratedLinearSVC,0.97619,0.97853,0.97736,0.99621,0.99574,0.02286,0.02147,8570,209,8934,188,3.67
+Test,CalibratedLinearSVC,0.97372,0.9775,0.97561,0.996,0.99561,0.02526,0.0225,8559,231,8914,197,

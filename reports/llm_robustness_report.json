@@ -1,0 +1,299 @@
+{
+  "timestamp": "2026-10-04T02:07:38.245931",
+  "split_hash": "85851abd839f4971",
+  "benchmark": "Zenodo LLM Phishing",
+  "results": {
+    "human_phishing": {
+      "M1_Text": {
+        "n_samples": 763,
+        "true_positives": 742,
+        "false_negatives": 21,
+        "recall": 0.97248,
+        "evasion_rate": 0.02752,
+        "mean_probability": 0.9102,
+        "median_probability": 0.9733,
+        "std_probability": 0.14032,
+        "iqr_probability": 0.1148,
+        "brier_score": 0.02775
+      },
+      "M2_Text_URL": {
+        "n_samples": 763,
+        "true_positives": 743,
+        "false_negatives": 20,
+        "recall": 0.97379,
+        "evasion_rate": 0.02621,
+        "mean_probability": 0.89799,
+        "median_probability": 0.96246,
+        "std_probability": 0.14027,
+        "iqr_probability": 0.13446,
+        "brier_score": 0.03008
+      },
+      "M3_Text_Intent": {
+        "n_samples": 763,
+        "true_positives": 742,
+        "false_negatives": 21,
+        "recall": 0.97248,
+        "evasion_rate": 0.02752,
+        "mean_probability": 0.91047,
+        "median_probability": 0.97374,
+        "std_probability": 0.14012,
+        "iqr_probability": 0.11747,
+        "brier_score": 0.02765
+      },
+      "M4_Full": {
+        "n_samples": 763,
+        "true_positives": 743,
+        "false_negatives": 20,
+        "recall": 0.97379,
+        "evasion_rate": 0.02621,
+        "mean_probability": 0.89513,
+        "median_probability": 0.95497,
+        "std_probability": 0.13864,
+        "iqr_probability": 0.13456,
+        "brier_score": 0.03022
+      },
+      "XLM_RoBERTa": {
+        "n_samples": 763,
+        "true_positives": 717,
+        "false_negatives": 46,
+        "recall": 0.93971,
+        "evasion_rate": 0.06029,
+        "mean_probability": 0.93578,
+        "median_probability": 0.99905,
+        "std_probability": 0.23152,
+        "iqr_probability": 0.001,
+        "brier_score": 0.05773
+      }
+    },
+    "llm_generated_phishing": {
+      "M1_Text": {
+        "n_samples": 735,
+        "true_positives": 735,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "evasion_rate": 0.0,
+        "mean_probability": 0.88282,
+        "median_probability": 0.92465,
+        "std_probability": 0.10348,
+        "iqr_probability": 0.16331,
+        "brier_score": 0.02444,
+        "delta_recall_vs_human": 0.02752
+      },
+      "M2_Text_URL": {
+        "n_samples": 735,
+        "true_positives": 735,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "evasion_rate": 0.0,
+        "mean_probability": 0.86662,
+        "median_probability": 0.8928,
+        "std_probability": 0.0989,
+        "iqr_probability": 0.16152,
+        "brier_score": 0.02757,
+        "delta_recall_vs_human": 0.02621
+      },
+      "M3_Text_Intent": {
+        "n_samples": 735,
+        "true_positives": 735,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "evasion_rate": 0.0,
+        "mean_probability": 0.89276,
+        "median_probability": 0.93719,
+        "std_probability": 0.10455,
+        "iqr_probability": 0.15237,
+        "brier_score": 0.02243,
+        "delta_recall_vs_human": 0.02752
+      },
+      "M4_Full": {
+        "n_samples": 735,
+        "true_positives": 735,
+        "false_negatives": 0,
+        "recall": 1.0,
+        "evasion_rate": 0.0,
+        "mean_probability": 0.86173,
+        "median_probability": 0.88451,
+        "std_probability": 0.09896,
+        "iqr_probability": 0.16227,
+        "brier_score": 0.02891,
+        "delta_recall_vs_human": 0.02621
+      },
+      "XLM_RoBERTa": {
+        "n_samples": 735,
+        "true_positives": 716,
+        "false_negatives": 19,
+        "recall": 0.97415,
+        "evasion_rate": 0.02585,
+        "mean_probability": 0.9722,
+        "median_probability": 0.99915,
+        "std_probability": 0.14153,
+        "iqr_probability": 0.0005,
+        "brier_score": 0.0208,
+        "delta_recall_vs_human": 0.03444
+      }
+    },
+    "benign_baseline": {
+      "M1_Text": {
+        "n_samples": 9145,
+        "false_positives": 231,
+        "true_negatives": 8914,
+        "fpr": 0.02526,
+        "specificity": 0.97474,
+        "mean_probability": 0.07413
+      },
+      "M2_Text_URL": {
+        "n_samples": 9145,
+        "false_positives": 246,
+        "true_negatives": 8899,
+        "fpr": 0.0269,
+        "specificity": 0.9731,
+        "mean_probability": 0.08297
+      },
+      "M3_Text_Intent": {
+        "n_samples": 9145,
+        "false_positives": 221,
+        "true_negatives": 8924,
+        "fpr": 0.02417,
+        "specificity": 0.97583,
+        "mean_probability": 0.07239
+      },
+      "M4_Full": {
+        "n_samples": 9145,
+        "false_positives": 247,
+        "true_negatives": 8898,
+        "fpr": 0.02701,
+        "specificity": 0.97299,
+        "mean_probability": 0.08539
+      }
+    },
+    "statistical_tests": {
+      "M1_Text": {
+        "ks_statistic": 0.32256,
+        "ks_pvalue": 5.594685088564712e-35,
+        "mann_whitney_u": 371689.0,
+        "mann_whitney_pvalue": 1.07206955128124e-27
+      },
+      "M2_Text_URL": {
+        "ks_statistic": 0.31527,
+        "ks_pvalue": 2.075326415857473e-33,
+        "mann_whitney_u": 372366.5,
+        "mann_whitney_pvalue": 4.387620254535185e-28
+      },
+      "M3_Text_Intent": {
+        "ks_statistic": 0.27111,
+        "ks_pvalue": 1.013498044885522e-24,
+        "mann_whitney_u": 354862.5,
+        "mann_whitney_pvalue": 5.778896967537519e-19
+      },
+      "M4_Full": {
+        "ks_statistic": 0.30823,
+        "ks_pvalue": 6.224000557721929e-32,
+        "mann_whitney_u": 368770.5,
+        "mann_whitney_pvalue": 4.6702524215916165e-26
+      },
+      "XLM_RoBERTa": {
+        "ks_statistic": 0.12156,
+        "ks_pvalue": 2.7442436726395515e-05,
+        "mann_whitney_u": 242540.0,
+        "mann_whitney_pvalue": 6.078435035306029e-06
+      }
+    }
+  },
+  "profiles": {
+    "linguistic": {
+      "human": {
+        "n_samples": 763,
+        "char_length_mean": 1118.44,
+        "char_length_median": 716.0,
+        "char_length_std": 998.19,
+        "word_count_mean": 160.38,
+        "word_count_median": 114.0,
+        "word_count_std": 126.71,
+        "ttr_mean": 0.7131,
+        "ttr_std": 0.1648,
+        "url_present_rate": 0.426
+      },
+      "llm_generated": {
+        "n_samples": 735,
+        "char_length_mean": 1321.58,
+        "char_length_median": 1323.0,
+        "char_length_std": 143.53,
+        "word_count_mean": 193.83,
+        "word_count_median": 194.0,
+        "word_count_std": 24.72,
+        "ttr_mean": 0.6441,
+        "ttr_std": 0.046,
+        "url_present_rate": 0.5782
+      }
+    },
+    "intent": {
+      "credential_request": {
+        "human_mean": 0.013,
+        "llm_mean": 0.117,
+        "diff": 0.104,
+        "ratio": 9.02
+      },
+      "otp_request": {
+        "human_mean": 0.0,
+        "llm_mean": 0.0004,
+        "diff": 0.0004,
+        "ratio": 42.64
+      },
+      "payment_request": {
+        "human_mean": 0.0436,
+        "llm_mean": 0.0528,
+        "diff": 0.0092,
+        "ratio": 1.21
+      },
+      "account_threat": {
+        "human_mean": 0.0168,
+        "llm_mean": 0.0327,
+        "diff": 0.0159,
+        "ratio": 1.94
+      },
+      "urgency": {
+        "human_mean": 0.0464,
+        "llm_mean": 0.2358,
+        "diff": 0.1894,
+        "ratio": 5.08
+      },
+      "authority_impersonation": {
+        "human_mean": 0.0454,
+        "llm_mean": 0.0506,
+        "diff": 0.0052,
+        "ratio": 1.11
+      },
+      "reward_prize": {
+        "human_mean": 0.0101,
+        "llm_mean": 0.0031,
+        "diff": -0.007,
+        "ratio": 0.3
+      },
+      "fear_threat": {
+        "human_mean": 0.017,
+        "llm_mean": 0.0,
+        "diff": -0.017,
+        "ratio": 0.0
+      },
+      "call_to_action": {
+        "human_mean": 0.0409,
+        "llm_mean": 0.0046,
+        "diff": -0.0363,
+        "ratio": 0.11
+      },
+      "social_engineering_score": {
+        "human_mean": 0.1184,
+        "llm_mean": 0.2542,
+        "diff": 0.1358,
+        "ratio": 2.15
+      }
+    }
+  },
+  "plot_paths": {
+    "detection_rates": "C:\\Users\\lenovo\\scamshield\\reports\\llm_vs_human_detection_rates.png",
+    "probability_density": "C:\\Users\\lenovo\\scamshield\\reports\\llm_vs_human_probability_density.png",
+    "intent_comparison": "C:\\Users\\lenovo\\scamshield\\reports\\llm_intent_feature_comparison.png",
+    "length_distribution": "C:\\Users\\lenovo\\scamshield\\reports\\llm_text_length_distribution.png"
+  },
+  "elapsed_seconds": 38.01
+}

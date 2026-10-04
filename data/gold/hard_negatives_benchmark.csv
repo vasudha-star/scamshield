@@ -1,0 +1,41 @@
+record_id,category,language,text,trigger_keywords,ground_truth,project_label
+HN_BANK_01,banking_otp,en,"Your SBI NetBanking login OTP is 582914. Valid for 10 minutes. Never share your OTP, password or CVV with anyone including bank staff.","otp, bank, password",0,benign
+HN_BANK_02,banking_otp,en,"Alert: Rs 1,450.00 debited from HDFC Bank Account **4910 on 03-Oct-26 via UPI. If not done by you, call 18002583838 immediately to block card.","alert, bank, account, block, immediately",0,benign
+HN_BANK_03,banking_otp,en,"ICICI Bank: OTP for online transaction of INR 3,299.00 at Flipkart is 839102. Do not share OTP with anyone to maintain security.","bank, otp, security",0,benign
+HN_BANK_04,banking_otp,en,"Axis Bank Security Alert: Your credit card payment of INR 8,450 is due on 05-Oct. Please pay through official Axis Mobile App or netbanking.","bank, security, alert",0,benign
+HN_BANK_05,banking_otp,en,Your monthly bank account statement for account ending in 9812 has been generated. Login to netbanking portal https://netbanking.hdfcbank.com to view.,"bank, account, login",0,benign
+HN_BANK_06,banking_otp,en,"Urgent: Unusual sign-in attempt detected on your bank netbanking. If this was you, please verify via our official mobile app.","urgent, bank, verify",0,benign
+HN_BANK_07,banking_otp,en,"Dear Customer, INR 5,000.00 withdrawn from ATM using SBI Debit Card ending in 1102. Call bank toll-free if unauthorized.",bank,0,benign
+HN_BANK_08,banking_otp,en,Kotak Mahindra Bank: Verify your updated residential address for credit card delivery by visiting your nearest branch with Aadhaar.,"bank, verify",0,benign
+HN_BANK_09,banking_otp,en,"Punjab National Bank: Account credited with salary INR 65,000. Available balance in your savings account is INR 82,410.","bank, account",0,benign
+HN_BANK_10,banking_otp,en,Bank alert: Your debit card will expire this month. A replacement card has been dispatched to your registered communication address.,"bank, alert",0,benign
+HN_SEC_01,security_2fa,en,Google verification code: G-739201. Use this code to verify your Google Account. Never share this code with anyone.,"verify, account",0,benign
+HN_SEC_02,security_2fa,en,"GitHub: A new personal access token was generated on your account. If you did not create this token, review security settings at https://github.com/settings/security.","account, security",0,benign
+HN_SEC_03,security_2fa,en,"Microsoft Security Alert: A new sign-in from Firefox on Windows was detected for your account. If this was not you, reset your password.","security, alert, account, password",0,benign
+HN_SEC_04,security_2fa,en,"Apple ID: Your Apple Account password was recently changed. If you made this change, you can safely disregard this email.","account, password",0,benign
+HN_SEC_05,security_2fa,en,Your Uber login code is 8492. Reply STOP to unsubscribe. Never share your login code with anyone including Uber drivers.,login,0,benign
+HN_SEC_06,security_2fa,en,WhatsApp code 918-204. You can also tap this link to verify your phone number: https://v.whatsapp.com/918204. Do not share this code.,verify,0,benign
+HN_SEC_07,security_2fa,en,LinkedIn Security: Someone requested a password reset for your account. Click here if you requested it: https://linkedin.com/checkpoint/rp.,"security, password, account",0,benign
+HN_SEC_08,security_2fa,en,Slack notification: You have been invited to join Workspace 'ScamShield Engineering'. Please verify your email to accept the invite.,verify,0,benign
+HN_SEC_09,security_2fa,en,AWS Security Hub: Monthly compliance report for your account 8391-2831 is now ready in the AWS Management Console.,"security, account",0,benign
+HN_SEC_10,security_2fa,en,Urgent password update required: Your enterprise single sign-on password will expire in 3 days as per company IT security policy.,"urgent, password, security",0,benign
+HN_DELIV_01,delivery_logistics,en,Amazon Delivery Update: Your package with order #402-819283-1928 is out for delivery today with courier delivery associate Ramesh.,update,0,benign
+HN_DELIV_02,delivery_logistics,en,Flipkart: Your order has been delivered. Share delivery verification PIN 4920 with delivery agent only when you receive the package.,verify,0,benign
+HN_DELIV_03,delivery_logistics,en,BlueDart Alert: Shipment with waybill 84920194 is expected to arrive by 6 PM. Track status on official site https://bluedart.com.,alert,0,benign
+HN_DELIV_04,delivery_logistics,en,Zomato: Delivery partner is arriving with your order. Provide delivery confirmation code 81 to verify receipt of food.,verify,0,benign
+HN_DELIV_05,delivery_logistics,en,Urgent update on shipment: Delivery attempted for package #91823. Recipient unavailable. Rescheduled for tomorrow morning.,"urgent, update",0,benign
+HN_GOV_01,statutory_gov,en,UIDAI: Aadhaar OTP is 391048 for generating e-Aadhaar. Valid for 10 minutes. Do not share OTP with unauthorized callers.,otp,0,benign
+HN_GOV_02,statutory_gov,en,Income Tax Department: e-Filing confirmation. ITR-1 for AY 2026-27 has been successfully e-verified using Aadhaar OTP.,"verify, otp",0,benign
+HN_GOV_03,statutory_gov,en,Passport Seva Alert: Your appointment at PSK Bengaluru is scheduled for 10-Oct-26 at 09:30 AM. Bring original documents to verify.,"alert, verify",0,benign
+HN_GOV_04,statutory_gov,en,DigiLocker Security Alert: Your Driving License document was successfully fetched into your DigiLocker account.,"security, alert, account",0,benign
+HN_GOV_05,statutory_gov,en,"EPFO India: Passbook update for UAN 1009281928. Employer contribution of Rs 1,800 has been credited to your provident fund account.","update, account",0,benign
+HN_MULTI_01,multilingual,hi,भारतीय स्टेट बैंक: आपके खाते से रुपये 500 का यूपीआई भुगतान सफल रहा। किसी भी समस्या के लिए 1800112211 पर संपर्क करें।,"bank, account",0,benign
+HN_MULTI_02,multilingual,hinglish,Aapka SBI netbanking login OTP hai 492018. Yeh OTP 10 minute ke liye valid hai. Kripya kisi ke saath share na karein.,"otp, bank, login",0,benign
+HN_MULTI_03,multilingual,hinglish,"HDFC Bank Alert: Aapke account se Rs 2,000 debit hua hai. Agar aapne yeh transaction nahi kiya hai toh turant card block karein.","bank, alert, account, block",0,benign
+HN_MULTI_04,multilingual,hinglish,"Urgent reminder: Kal office meeting 10 baje hai, please sabhi presentations verify karke ready rakhein.","urgent, verify",0,benign
+HN_MULTI_05,multilingual,hinglish,Flipkart order deliver ho chuka hai. Delivery agent ko rating dene ke liye app login karein.,login,0,benign
+HN_MULTI_06,multilingual,te,Mee HDFC Bank account nunchi Rs. 500 debit ayindi. Ee transaction meeru cheyakapothe bank branch ki alert cheyandi.,"bank, account, alert",0,benign
+HN_MULTI_07,multilingual,te,SBI Netbanking OTP: 839102. Ee OTP 5 nimishalu matrame pani chestundi. Evaritho share cheyavaddu.,"otp, bank",0,benign
+HN_MULTI_08,multilingual,te,Urgent: Repu morning doctor appointment 9 gantalaku confirm ayindi. Time ki raavalsindi ga manavi.,urgent,0,benign
+HN_MULTI_09,multilingual,te,Mee Amazon delivery package repu dispatch avthundi. Address verify cheyandi.,verify,0,benign
+HN_MULTI_10,multilingual,te,Bank security alert: Mee debit card PIN change successful ga jarigindi.,"bank, security, alert",0,benign
